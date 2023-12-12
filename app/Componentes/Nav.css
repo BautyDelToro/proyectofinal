@@ -1,0 +1,38 @@
+:root{
+    --azulpokemon: rgb(50,100,170);
+    --amarillopokemon: rgb(255,200,5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagenlogo{
+    max-width: 60px;
+    padding-left: 10px;
+}
+
+.navegacion{
+    display: flex;
+    background-color: var(--azulpokemon);
+    max-width: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.lista li{
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.lista li:hover{
+    color: var(--amarillopokemon);
+}
+

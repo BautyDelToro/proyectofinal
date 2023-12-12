@@ -1,0 +1,17 @@
+.imagenlogotipo{
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.pokemonestipo{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.titulotipo{
+    font-size: 15px;
+}
+
+.divPokemon{
+    padding-bottom: 50px;
+}
