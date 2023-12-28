@@ -47,14 +47,11 @@
     color: var(--amarillooscuro);
     padding-top: 30px;
     padding-bottom: 30px;
-    border: solid  rgb(226, 226, 226) 2px;
+    border: solid  var(--azulpokemon) 2px;
     border-radius: 5px;
 }
 
-.botonDespliegue:hover{
-    color: var(--azulpokemon);
-    background-color: rgb(226, 226, 226);
-}
+.botonDespliegue:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon);}
 
 .botonEncendido{
     display: inline-block;
@@ -67,14 +64,11 @@
     animation-iteration-count: 1; 
     animation-timing-function:cubic-bezier(.49,0,.49,.99);
     animation-fill-mode: forwards;
-    border: solid  rgb(226, 226, 226) 2px;
+    border: solid  var(--azulpokemon) 2px;
     border-radius: 5px;
 }
 
-.botonEncendido:hover{
-    color: var(--azulpokemon);
-    background-color: rgb(226, 226, 226);
-}
+.botonEncendido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon);}
 
 
 @keyframes moverDerecha{
@@ -84,8 +78,6 @@
 }  
 
 .botonMovido{
-    /* position: relative;
-    left: 1500px; */
     display: inline-block;
     transform: translate(1500px,0px);
     margin-top: 60px;
@@ -97,20 +89,19 @@
     animation-iteration-count: 1; 
     animation-timing-function:cubic-bezier(.49,0,.49,.99);
     animation-fill-mode: forwards;
-    border: solid  rgb(226, 226, 226) 2px;
+    border: solid  var(--azulpokemon) 2px;
     border-radius: 5px;
 }
 
-.botonMovido:hover{
-    color: var(--azulpokemon);
-    background-color: rgb(226, 226, 226);
-}
+.botonMovido:hover{background-color: rgb(226, 226, 226); color: var(--azulpokemon);}
 
 @keyframes moverIzquierda{
     100%{
         transform: translate(0px, 0px) 
     }
 } 
+
+
 
 .flechaDerecha{
     max-height: 25px;
@@ -148,6 +139,6 @@
 }
 
 
-.olaa{
+.oli{
     background-color: blue;
 }
