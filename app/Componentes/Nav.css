@@ -1,9 +1,3 @@
-:root{
-    --azulpokemon: rgb(50,100,170);
-    --amarillopokemon: rgb(255,200,5);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .imagenlogo{
     max-width: 60px;
     padding-left: 10px;
@@ -15,6 +9,7 @@
     max-width: 100%;
     flex-grow: 1;
     align-items: center;
+    padding: 5px 0px;
 }
 
 .lista{

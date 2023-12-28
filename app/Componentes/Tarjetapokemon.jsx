@@ -1,6 +1,7 @@
-
 export default function Tarjetapokemon (){
     return(
-        a
+        <div>
+            <img src="" alt="" />
+        </div>
     )
 }
