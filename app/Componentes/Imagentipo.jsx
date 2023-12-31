@@ -3,12 +3,13 @@ import '../pokemones/pokemones.css'
 import { useState } from 'react';
 import Tarjetapokemon from './Tarjetapokemon';
 
+
 export default function Imagentipo ({titulo, imagen, accesibilidad,idd}) {
-    
+        
     const [boton, setBoton] = useState(0);
     function botonusado(){
+        
         if(boton===0){
-            console.log("ola");
             setBoton(1);
             document.getElementById("botonpoke"+titulo).classList.remove('botondespliegue')
             document.getElementById("botonpoke"+titulo).classList.add('botonEncendido');
@@ -16,7 +17,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd}) {
             document.getElementById("flecha"+titulo).classList.add('flechaDerecha');
         }
         else if (boton===1){
-            console.log("olu")
             setBoton(2);
             document.getElementById("botonpoke"+titulo).classList.remove('botonEncendido')
             document.getElementById("botonpoke"+titulo).classList.add('botonMovido')
@@ -25,7 +25,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd}) {
             document.getElementById("flecha"+titulo).classList.add('flechaIzquierda');
         }
         else if(boton===2){
-            console.log("popo")
             setBoton(1);
             document.getElementById("botonpoke"+titulo).classList.remove('botonMovido')
             document.getElementById("botonpoke"+titulo).classList.add('botonEncendido')
@@ -48,7 +47,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd}) {
                 </svg> 
             </button>
 
-            <Tarjetapokemon tipo={idd} />
+            <Tarjetapokemon tipo={idd}/>
         </div>
     )
 }

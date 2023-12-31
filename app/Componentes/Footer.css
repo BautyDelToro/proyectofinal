@@ -1,3 +1,4 @@
 .footer{
-    background-color: blueviolet;
+    background-color: var(--azulpokemon);
+    height: 100px;
 }

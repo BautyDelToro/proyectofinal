@@ -1,57 +1,58 @@
 'use client';
 import { useState, useEffect } from "react" 
-
+import './Tarjetapokemon.css'
 
 export default function Tarjetapokemon (tipo){
-        
-    const [cargando1, setCargando1] = useState(true) //cargando empieza en true
-    const [cargando2, setCargando2] = useState(true) //cargando empieza en true
+
+    const [cargando1, setCargando1] = useState(true) 
+    const [cargando2, setCargando2] = useState(true) 
 
     
-    // guardamos al pokemon
     const [poke, setPoke] = useState()
     const [pokeTipo, setPokeTipo] = useState()
-    console.log({tipo})
 
-    // el [] signica que queremos que llame a la api una sola vz
-    useEffect(()=> {
 
-        const fetchpokeTipo = async()=>{
+        if(cargando1===true && cargando2 === true){
+            const fetchpokeTipo = async()=>{
             const res= await fetch(("https://pokeapi.co/api/v2/type/"+tipo.tipo));
             if(res.ok===true){
                 const data = await res.json()
-                setPokeTipo(data) //le pongo toda esta data al pokemon
+                setPokeTipo(data) 
                 setCargando1(false)
             }
-        } 
-        fetchpokeTipo();
-    },[]);
+            } 
+            fetchpokeTipo();
+        }
     
-    useEffect(()=> {
-        console.log("oluuaa")
-        if(pokeTipo){
-            console.log("oluuaaaaaaaaa")
+
+        if(cargando1===false && cargando2===true){
             const fetchpoke = async()=>{
             const res= await fetch(("https://pokeapi.co/api/v2/pokemon/"+pokeTipo.pokemon[0].pokemon.name));
             if(res.ok===true){
                 const data = await res.json()
-                setPoke(data) //le pongo toda esta data al pokemon
+                setPoke(data) 
                 setCargando2(false)
-                console.log({olaa})
+                setCargando1(false)
             }
-        } 
-        fetchpoke();}
-    },[]);
+            } 
+            fetchpoke();
+        }
 
-    if(cargando1===true&&cargando2===true){ //poniendo esto, me ahorro todo lo que comenté abajo
-        return
+    if(cargando1===true&&cargando2===true){ 
+        return(
+            <h4>Cargando...</h4>
+        )
     }
-    return(
-        
-        
-        <div>
-            <h3>{pokeTipo.pokemon[0].pokemon.name}</h3>
-            <h3>{tipo.tipo}</h3>
-        </div>
-    )
+    if(cargando1===false && cargando2===false){
+        return(
+            
+            
+            <div className="tarjeta1">
+                <h3>{pokeTipo.pokemon[0].pokemon.name}</h3>
+                <h3>{tipo.tipo}</h3>
+                <h3>{poke.name}</h3>
+                <img src={poke.sprites.front_default} alt="" />
+            </div>
+        )
+    }
 }

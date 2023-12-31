@@ -1,6 +1,7 @@
 .imagenlogotipo{
     max-width: 150px;
     border-radius: 50%;
+    border: solid #ffffff 2px;
 }
 
 .pokemonestipo{
@@ -18,7 +19,7 @@
 }
 
 .divPokemon{
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
