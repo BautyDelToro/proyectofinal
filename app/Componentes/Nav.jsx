@@ -7,11 +7,15 @@ export default function Nav(){
         <a href="./"><img src="/imagenes/Poké_Ball_icon.svg.png" alt="Inicio" className="imagenlogo"/></a>
         <ul className="lista">
             <li>
-                <Link href="./pokemones" className="ola">Pokemones</Link>
+                <Link href="./pokemones">Pokemones</Link>
             </li>
            
             <li>
-                <Link href="./Contacto">Contacto</Link>
+                <Link href="./habilidades">Habilidades</Link>
+            </li>
+
+            <li>
+                <Link href="./contacto">Contacto</Link>
             </li>
 
         </ul>

@@ -1,7 +1,10 @@
 :root{
   --azulpokemon: rgb(50,100,170);
+  --azuloscuro: rgb(20, 54, 102);
   --amarillopokemon: rgb(255,200,5);
   --amarillooscuro: rgb(176, 151, 63);
+  --azulclaro:  rgb(164, 202, 255) ; 
+  --blancoclaro:  rgb(226, 226, 226);
   font-family: Arial, Helvetica, sans-serif;
 }
 

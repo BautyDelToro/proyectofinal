@@ -1,0 +1,12 @@
+.oli{
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transition: box-shadow 2s;
+}
+
+.oli:hover{
+    box-shadow:200px 0px 0px 20px rgb(203, 220, 201),
+               0px 0px 0px 50px rgb(57, 89, 68) ;
+}
