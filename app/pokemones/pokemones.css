@@ -1,7 +1,10 @@
 .imagenlogotipo{
-    max-width: 150px;
+    width: 150px;
     border-radius: 50%;
     border: solid #ffffff 2px;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .pokemonestipo{
