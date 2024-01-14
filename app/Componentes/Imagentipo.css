@@ -20,7 +20,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1250ms;
-    height: 349px;
+    height: 350px;
 }
     
 .tarjeta21{
@@ -35,6 +35,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1500ms;
+    height: 350px;
 }
 
 .tarjeta31{
@@ -49,6 +50,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1800ms;
+    height: 350px;
 }
     
 .tarjeta41{
@@ -63,6 +65,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 2200ms;
+    height: 350px;
 }
 
 .tarjeta51{
@@ -77,6 +80,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 2500ms;
+    height: 350px;
 }
     
 .tarjeta61{
@@ -91,6 +95,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 3000ms;
+    height: 350px;
 }
 
 .tarjeta71{
@@ -105,6 +110,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 3900ms;
+    height: 350px;
 }
 
 
@@ -157,7 +163,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 2500ms;
-    height: 349px;
+    height: 350px;
 }
     
 .tarjeta20{
@@ -171,6 +177,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 2000ms;
+    height: 350px;
 }
 
 .tarjeta30{
@@ -184,6 +191,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1800ms;
+    height: 350px;
 }
     
 .tarjeta40{
@@ -197,6 +205,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1600ms;
+    height: 350px;
 }
 
 .tarjeta50{
@@ -210,6 +219,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 1300ms;
+    height: 350px;
 }
     
 .tarjeta60{
@@ -223,6 +233,7 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 900ms;
+    height: 350px;
 }
 
 .tarjeta70{
@@ -236,4 +247,5 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
     animation-delay: 0ms;
+    height: 350px;
 }

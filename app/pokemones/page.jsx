@@ -18,7 +18,7 @@ export default function Pokemones (){
                 <Imagentipo titulo="Roca" imagen="/imagenes/Roca.png" accesibilidad="Logotipo Roca" idd="rock" Poke2="bastiodon" Poke3="lairon" />
                 <Imagentipo titulo="Bicho" imagen="/imagenes/Bicho.png" accesibilidad="Logotipo Bicho" idd="bug" Poke2="beedrill" Poke3="beautifly" />
                 <Imagentipo titulo="Planta" imagen="/imagenes/Planta.png" accesibilidad="Logotipo Planta" idd="grass" Poke2="servine" Poke3="roserade" />
-                <Imagentipo titulo="Hielo" imagen="/imagenes/Hielo.png" accesibilidad="Logotipo Hielo" idd="ice" Poke2="glastrier" Poke3="vanilluxe" />
+                <Imagentipo titulo="Hielo" imagen="/imagenes/Hielo.png" accesibilidad="Logotipo Hielo" idd="ice" Poke2="regice" Poke3="vanilluxe" />
                 <Imagentipo titulo="Acero" imagen="/imagenes/Acero.png" accesibilidad="Logotipo Acero" idd="steel" Poke2="metagross" Poke3="dialga" />
                 <Imagentipo titulo="Agua" imagen="/imagenes/Agua.png" accesibilidad="Logotipo Agua" idd="water" Poke2="froakie" Poke3="gyarados" />
                 <Imagentipo titulo="Vuelo" imagen="/imagenes/Vuelo.png" accesibilidad="Logotipo Vuelo" idd="flying" Poke2="golbat" Poke3="staraptor" />

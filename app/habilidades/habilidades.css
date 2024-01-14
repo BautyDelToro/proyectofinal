@@ -1,12 +1,94 @@
-.oli{
-    background-color: blue;
-    height: 300px;
-    width: 300px;
+.svgboton0{
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    transition: box-shadow 2s;
+    margin: auto;
+}
+.svgboton2{
+    opacity: 0;
+    position: relative;
+    top: 100px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation: subidayaparecida 700ms;
+    animation-timing-function:cubic-bezier(.05,.63,.42,.92);
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+    margin: auto;
+}
+.svgboton1{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -30px;
+    border-radius: 50%;
+    animation: subidaydesaparecida 1s;
+    animation-timing-function:cubic-bezier(.05,.63,.42,.92);
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    margin: auto;
+}
+.svgboton2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+.svgcruz0{
+    display: none;
+    margin: auto;
+}
+.svgcruz1{
+    opacity:0;
+    height: 30px;
+    width: 30px;
+    animation: aparecerygirar 1000ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;  
+    animation-delay: 1s;
+    margin: auto;
+    position: relative;
+    top: 1px;
+}
+.svgcruz2{
+    height: 30px;
+    width: 30px;
+    animation: desaparecerygirar 1000ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    margin: auto;
+    position: relative;
+    top: 3px;
 }
 
-.oli:hover{
-    box-shadow:200px 0px 0px 20px rgb(203, 220, 201),
-               0px 0px 0px 50px rgb(57, 89, 68) ;
+#botonderecha{
+    background-color: rgb(149, 177, 90);
+    color:  rgb(213, 229, 183);
+}
+#botonderecha:hover{
+    box-shadow:0px 0px 0px 7px rgb(85, 115, 36),
+               0px 0px 0px 14px  var(--verdepokemon);
+}
+
+#botonizquierda{
+    color: rgb(191, 229, 230);
+    background-color: #5ca6a3;
+}
+#botonizquierda:hover{
+    box-shadow:0px 0px 0px 7px #205c78,
+               0px 0px 0px 14px  var(--azulpokemon);
+}
+
+#tituloderecha{
+    color:  rgb(213, 229, 183);
+}
+
+#titulomedio{
+    color: var(--azuloscuro);
+}
+
+#tituloizquierda{
+    color: rgb(191, 229, 230);
 }
