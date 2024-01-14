@@ -210,7 +210,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke.height/10} m</h4>
             <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
             <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
             </Link>   
             </div>
@@ -222,7 +222,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke.height/10} m</h4>
             <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
             <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
             </Link>             
             </div>
@@ -235,7 +235,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
             <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke2.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
             <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
             </Link>            
             </div>
@@ -247,7 +247,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
             <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke2.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
             <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
             </Link>            
             </div>
@@ -260,7 +260,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
             <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke3.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
             <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
             </Link>            
             </div>
@@ -272,7 +272,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
             <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
             <h4 className='texto'>Abilitie:</h4>
-            <Link href={"../habilidades#"+poke3.abilities[0].ability.name}>
+            <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
             <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
             </Link>            
             </div>

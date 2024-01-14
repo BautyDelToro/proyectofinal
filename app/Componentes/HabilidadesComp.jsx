@@ -12,6 +12,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
     const [cargando1, setCargando1] = useState(true) 
     const [cargando2, setCargando2] = useState(true) 
     const [cargando3, setCargando3] = useState(true) 
+    const [cargando4, setCargando4] = useState(true) 
 
     const [boton1, setBoton1] = useState(0);
     const [boton2, setBoton2] = useState(0);
@@ -166,13 +167,19 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
     return(
         <>
         {(cargando1===true || cargando2===true || cargando3===true) &&
-        <h2 className="cargando">Loading abilities</h2>
+        <>
+        <div className="divhabilidades">
+            <div id={Habilidad1.Habilidad1}>    <h2 className="cargando">Loading abilities</h2> </div>
+            <div id={Habilidad1.Habilidad2}>    <h2 className="cargando">Loading abilities</h2> </div>
+            <div id={Habilidad1.Habilidad3}>    <h2 className="cargando">Loading abilities</h2> </div>
+        </div>
+        </>
         }
         {(cargando1===false && cargando2===false && cargando3===false) &&
         <div className="divhabilidades">
             {/* <a href="./pokemones#oliVeneno">oli</a> */}
             <div className="divgrandeizquierda">
-                <div className="divHabi0izquierda" id={habilidad1.name}>
+                <div className="divHabi0izquierda">
                     <h4 className="titulohabilidad" id="tituloizquierda" >{habilidad1.name}</h4>
                 </div>
 
@@ -191,7 +198,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
                 </div>
             </div>
             <div className="divgrandemedio">
-                <div className="divHabi0medio" id={habilidad2.name}>
+                <div className="divHabi0medio">
                     <h4 className="titulohabilidad" id="titulomedio">{habilidad2.name}</h4>
                 </div>
 
@@ -211,7 +218,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             </div>
 
             <div className="divgrandederecha">
-                <div className="divHabi0derecha" id={habilidad3.name}>
+                <div className="divHabi0derecha">
                     <h4 className="titulohabilidad" id="tituloderecha">{habilidad3.name}</h4>
                 </div>
 

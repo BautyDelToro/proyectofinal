@@ -6,6 +6,7 @@
     border-radius: 9px;
     color: var(--azulpokemon);
     opacity: 0;
+    display: none;
 }
 
 .tarjeta11{
@@ -156,6 +157,7 @@
     }
     100%{
         opacity: 0;
+        display: none;
     }
 }
 
