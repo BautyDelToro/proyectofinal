@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react';
 
 
-export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Poke3}) {
+export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
         
     const [cargandotipo, setCargandotipo] = useState(true) 
     const [cargando1, setCargando1] = useState(true) 
@@ -76,9 +76,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
 
             document.getElementById("flecha"+titulo).classList.add('flechaDerecha');
 
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta0');
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
-
             document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta0');
             document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta11');
 
@@ -106,9 +103,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             document.getElementById("flecha"+titulo).classList.remove('flechaDerecha')
             document.getElementById("flecha"+titulo).classList.add('flechaIzquierda');
 
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta11');
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta10');
-
             document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta11');
             document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta10');
 
@@ -135,9 +129,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             document.getElementById("flecha"+titulo).classList.remove('flechaIzquierda')
             document.getElementById("flecha"+titulo).classList.add('flechaDerecha');
 
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta10');
-            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
-
             document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta10');
             document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta11');
 
@@ -162,7 +153,7 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
         <div className='divPokemon'>
             <div className='divimagen'>
                 <h3 className='titulopoke'>{idd}</h3>
-                <img src={imagen} alt={accesibilidad} className="imagenlogotipo"/>
+                <img src={imagen} alt={idd+" icon"} className="imagenlogotipo"/>
             </div>
     
             <button id={'botonpoke'+titulo} onClick={botonusado} className='botonDespliegue'> 
@@ -234,8 +225,8 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
                 <div className='tarjeta0' id={'tarjeta1'+poke.name+'shiny'+titulo}>
                 <h3>{poke.name} shiny</h3>        
                 <div className='divSprite'>
-                    <img src={poke.sprites.front_shiny} alt={poke.name}/>
-                    <img src={poke.sprites.back_shiny} alt={poke.name}/> 
+                    <img src={poke.sprites.front_shiny} alt={poke.name+" shiny"}/>
+                    <img src={poke.sprites.back_shiny} alt={poke.name+" shiny"}/> 
                 </div>
                 <h4 className='texto'>Heigh: {poke.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
@@ -263,8 +254,8 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
                 <div className='tarjeta0' id={'tarjeta2'+poke2.name+'shiny'}>
                 <h3>{poke2.name} shiny</h3>        
                 <div className='divSprite'>
-                    <img src={poke2.sprites.front_shiny} alt={poke2.name}/>
-                    <img src={poke2.sprites.back_shiny} alt={poke2.name}/> 
+                    <img src={poke2.sprites.front_shiny} alt={poke2.name+" shiny"}/>
+                    <img src={poke2.sprites.back_shiny} alt={poke2.name+" shiny"}/> 
                 </div>
                 <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
@@ -292,8 +283,8 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
                 <div className='tarjeta0' id={'tarjeta3'+poke3.name+'shiny'}>
                 <h3>{poke3.name} shiny</h3>        
                 <div className='divSprite'>
-                    <img src={poke3.sprites.front_shiny} alt={poke3.name} className='sprite1'/>
-                    <img src={poke3.sprites.back_shiny} alt={poke3.name} className='sprite2'/> 
+                    <img src={poke3.sprites.front_shiny} alt={poke3.name+" shiny"} className='sprite1'/>
+                    <img src={poke3.sprites.back_shiny} alt={poke3.name+" shiny"} className='sprite2'/> 
                 </div>
                 <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>

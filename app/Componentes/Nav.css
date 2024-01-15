@@ -2,7 +2,15 @@
     max-width: 60px;
     padding-left: 10px;
 }
-
+.navegacion2{
+    display: flex;
+    background-color: var(--azulpokemon);
+    max-width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5px 0px;    max-width: 1700px;
+    margin: 0px auto;
+}
 .navegacion{
     display: flex;
     background-color: var(--azulpokemon);
