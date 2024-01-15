@@ -1,6 +1,5 @@
 'use client';
 import '../pokemones/pokemones.css'
-import './Imagentipo.css'
 import Link from 'next/link'
 import { useState } from 'react';
 
@@ -38,7 +37,6 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             setPoke(data) 
             setCargando1(false)
             setCargandotipo(false)
-            console.log({poke})
         }
         } 
         fetchpoke();
@@ -78,26 +76,26 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
 
             document.getElementById("flecha"+titulo).classList.add('flechaDerecha');
 
-            document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta0');
-            document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta0');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
 
             document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta0');
-            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta21');
+            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta11');
 
             document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.remove('tarjeta0');
-            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta31');
+            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta21');
 
             document.getElementById("tarjeta2"+poke2.name).classList.remove('tarjeta0');
-            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta41');
+            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta31');
 
             document.getElementById("tarjeta2"+poke2.name+"shiny").classList.remove('tarjeta0');
-            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta51');
+            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta41');
 
             document.getElementById("tarjeta3"+poke3.name).classList.remove('tarjeta0');
-            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta61');
+            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta51');
 
             document.getElementById("tarjeta3"+poke3.name+"shiny").classList.remove('tarjeta0');
-            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta71');
+            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta61');
 
         }
         else if (boton===1 && cargandotipo===false && cargando1===false && cargando2===false && cargando3===false){
@@ -108,26 +106,26 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             document.getElementById("flecha"+titulo).classList.remove('flechaDerecha')
             document.getElementById("flecha"+titulo).classList.add('flechaIzquierda');
 
-            document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta11');
-            document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta10');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta11');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta10');
 
-            document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta21');
-            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta20');
+            document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta11');
+            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta10');
 
-            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.remove('tarjeta31');
-            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta30');
+            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.remove('tarjeta21');
+            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta20');
 
-            document.getElementById("tarjeta2"+poke2.name).classList.remove('tarjeta41');
-            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta40');
+            document.getElementById("tarjeta2"+poke2.name).classList.remove('tarjeta31');
+            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta30');
 
-            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.remove('tarjeta51');
-            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta50');
+            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.remove('tarjeta41');
+            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta40');
 
-            document.getElementById("tarjeta3"+poke3.name).classList.remove('tarjeta61');
-            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta60');
+            document.getElementById("tarjeta3"+poke3.name).classList.remove('tarjeta51');
+            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta50');
 
-            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.remove('tarjeta71');
-            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta70');
+            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.remove('tarjeta61');
+            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta60');
         }
         else if(boton===2 && cargandotipo===false && cargando1===false && cargando2===false && cargando3===false){
             setBoton(1);
@@ -137,26 +135,26 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
             document.getElementById("flecha"+titulo).classList.remove('flechaIzquierda')
             document.getElementById("flecha"+titulo).classList.add('flechaDerecha');
 
-            document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta10');
-            document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.remove('tarjeta10');
+            // document.getElementById("tarjetaRelaciones"+titulo).classList.add('tarjeta11');
 
-            document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta20');
-            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta21');
+            document.getElementById("tarjeta1"+poke.name+titulo).classList.remove('tarjeta10');
+            document.getElementById("tarjeta1"+poke.name+titulo).classList.add('tarjeta11');
 
-            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.remove('tarjeta30');
-            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta31');
+            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.remove('tarjeta20');
+            document.getElementById("tarjeta1"+poke.name+"shiny"+titulo).classList.add('tarjeta21');
 
-            document.getElementById("tarjeta2"+poke2.name).classList.remove('tarjeta40');
-            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta41');
+            document.getElementById("tarjeta2"+poke2.name).classList.remove('tarjeta30');
+            document.getElementById("tarjeta2"+poke2.name).classList.add('tarjeta31');
 
-            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.remove('tarjeta50');
-            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta51');
+            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.remove('tarjeta40');
+            document.getElementById("tarjeta2"+poke2.name+"shiny").classList.add('tarjeta41');
 
-            document.getElementById("tarjeta3"+poke3.name).classList.remove('tarjeta60');
-            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta61');
+            document.getElementById("tarjeta3"+poke3.name).classList.remove('tarjeta50');
+            document.getElementById("tarjeta3"+poke3.name).classList.add('tarjeta51');
 
-            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.remove('tarjeta70');
-            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta71');
+            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.remove('tarjeta60');
+            document.getElementById("tarjeta3"+poke3.name+"shiny").classList.add('tarjeta61');
         }
     }
 
@@ -176,105 +174,134 @@ export default function Imagentipo ({titulo, imagen, accesibilidad,idd,Poke2,Pok
            {(cargandotipo===false && cargando1===false && cargando2===false && cargando3===false) &&
             
             <>
-            <div className='tarjeta0' id={'tarjetaRelaciones'+titulo}>
+            {/* <div className='tarjeta0' id={'tarjetaRelaciones'+titulo}>
             <h3>Damage relations</h3>
             {(pokeTipo.damage_relations.no_damage_from[0]) &&
             <h4>No damage from {pokeTipo.damage_relations.no_damage_from[0].name}</h4>
             }
-
             {(pokeTipo.damage_relations.half_damage_from[0]) &&
             <h4>Half damage from {pokeTipo.damage_relations.half_damage_from[0].name}</h4>
             }
-
             {(pokeTipo.damage_relations.double_damage_from[0]) &&
             <h4>Double damage from {pokeTipo.damage_relations.double_damage_from[0].name}</h4>
             } 
-
             {(pokeTipo.damage_relations.no_damage_to[0]) &&
             <h4>No damage to {pokeTipo.damage_relations.no_damage_to[0].name}</h4>
             }
-            
             {(pokeTipo.damage_relations.half_damage_to[0]) &&
             <h4>Half damage to {pokeTipo.damage_relations.half_damage_to[0].name}</h4>
             }
-
             {(pokeTipo.damage_relations.double_damage_to[0]) &&
             <h4>Double damage to {pokeTipo.damage_relations.double_damage_to[0].name}</h4>
             }
-            </div>
             
-            <div className='tarjeta0' id={'tarjeta1'+poke.name+titulo}>
-            <h3>{poke.name}</h3>        
-            <img src={poke.sprites.front_default} alt={poke.name} className='sprite1'/>
-            <img src={poke.sprites.back_default} alt={poke.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
-            <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
-            </Link>   
-            </div>
+
+            {(pokeTipo.damage_relations.no_damage_from[1]) &&
+            <h4>No damage from {pokeTipo.damage_relations.no_damage_from[1].name}</h4>
+            }
+            {(pokeTipo.damage_relations.half_damage_from[1]) &&
+            <h4>Half damage from {pokeTipo.damage_relations.half_damage_from[1].name}</h4>
+            }
+            {(pokeTipo.damage_relations.double_damage_from[1]) &&
+            <h4>Double damage from {pokeTipo.damage_relations.double_damage_from[1].name}</h4>
+            } 
+            {(pokeTipo.damage_relations.no_damage_to[1]) &&
+            <h4>No damage to {pokeTipo.damage_relations.no_damage_to[1].name}</h4>
+            }
+            {(pokeTipo.damage_relations.half_damage_to[1]) &&
+            <h4>Half damage to {pokeTipo.damage_relations.half_damage_to[1].name}</h4>
+            }
+            {(pokeTipo.damage_relations.double_damage_to[1]) &&
+            <h4>Double damage to {pokeTipo.damage_relations.double_damage_to[1].name}</h4>
+            }
+            </div> */}
             
-            <div className='tarjeta0' id={'tarjeta1'+poke.name+'shiny'+titulo}>
-            <h3>{poke.name} shiny</h3>        
-            <img src={poke.sprites.front_shiny} alt={poke.name} className='sprite1'/>
-            <img src={poke.sprites.back_shiny} alt={poke.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
-            <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
-            </Link>             
-            </div>
+            <div className='Divtarjetas'>
+                <div className='tarjeta0' id={'tarjeta1'+poke.name+titulo}>
+                <h3>{poke.name}</h3>        
+                    <div className='divSprite'>
+                       <img src={poke.sprites.front_default} alt={poke.name}/>
+                        <img src={poke.sprites.back_default} alt={poke.name}/> 
+                    </div>
+                <h4 className='texto'>Heigh: {poke.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
+                <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
+                </Link>   
+                </div>
+                
+                <div className='tarjeta0' id={'tarjeta1'+poke.name+'shiny'+titulo}>
+                <h3>{poke.name} shiny</h3>        
+                <div className='divSprite'>
+                    <img src={poke.sprites.front_shiny} alt={poke.name}/>
+                    <img src={poke.sprites.back_shiny} alt={poke.name}/> 
+                </div>
+                <h4 className='texto'>Heigh: {poke.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
+                <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
+                </Link>             
+                </div>
 
 
-            <div className='tarjeta0' id={'tarjeta2'+poke2.name}>
-            <h3>{poke2.name}</h3>        
-            <img src={poke2.sprites.front_default} alt={poke2.name} className='sprite1'/>
-            <img src={poke2.sprites.back_default} alt={poke2.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
-            <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
-            </Link>            
-            </div>
-            
-            <div className='tarjeta0' id={'tarjeta2'+poke2.name+'shiny'}>
-            <h3>{poke2.name} shiny</h3>        
-            <img src={poke2.sprites.front_shiny} alt={poke2.name} className='sprite1'/>
-            <img src={poke2.sprites.back_shiny} alt={poke2.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
-            <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
-            </Link>            
-            </div>
+                <div className='tarjeta0' id={'tarjeta2'+poke2.name}>
+                <h3>{poke2.name}</h3>        
+                <div className='divSprite'>
+                    <img src={poke2.sprites.front_default} alt={poke2.name}/>
+                    <img src={poke2.sprites.back_default} alt={poke2.name}/> 
+                </div>
+                <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
+                <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
+                </Link>            
+                </div>
+                
+                <div className='tarjeta0' id={'tarjeta2'+poke2.name+'shiny'}>
+                <h3>{poke2.name} shiny</h3>        
+                <div className='divSprite'>
+                    <img src={poke2.sprites.front_shiny} alt={poke2.name}/>
+                    <img src={poke2.sprites.back_shiny} alt={poke2.name}/> 
+                </div>
+                <h4 className='texto'>Heigh: {poke2.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
+                <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
+                </Link>            
+                </div>
 
 
-            <div className='tarjeta0' id={'tarjeta3'+poke3.name}>
-            <h3>{poke3.name}</h3>        
-            <img src={poke3.sprites.front_default} alt={poke3.name} className='sprite1'/>
-            <img src={poke3.sprites.back_default} alt={poke3.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
-            <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
-            </Link>            
-            </div>
-            
-            <div className='tarjeta0' id={'tarjeta3'+poke3.name+'shiny'}>
-            <h3>{poke3.name} shiny</h3>        
-            <img src={poke3.sprites.front_shiny} alt={poke3.name} className='sprite1'/>
-            <img src={poke3.sprites.back_shiny} alt={poke3.name} className='sprite2'/>
-            <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
-            <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
-            <h4 className='texto'>Abilitie:</h4>
-            <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
-            <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
-            </Link>            
+                <div className='tarjeta0' id={'tarjeta3'+poke3.name}>
+                <h3>{poke3.name}</h3>        
+                <div className='divSprite'>
+                    <img src={poke3.sprites.front_default} alt={poke3.name}/>
+                    <img src={poke3.sprites.back_default} alt={poke3.name}/> 
+                </div>
+                <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
+                <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
+                </Link>            
+                </div>
+                
+                <div className='tarjeta0' id={'tarjeta3'+poke3.name+'shiny'}>
+                <h3>{poke3.name} shiny</h3>        
+                <div className='divSprite'>
+                    <img src={poke3.sprites.front_shiny} alt={poke3.name} className='sprite1'/>
+                    <img src={poke3.sprites.back_shiny} alt={poke3.name} className='sprite2'/> 
+                </div>
+                <h4 className='texto'>Heigh: {poke3.height/10} m</h4>
+                <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
+                <h4 className='texto'>Abilitie:</h4>
+                <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
+                <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
+                </Link>            
+                </div>
             </div>
             </>
            }

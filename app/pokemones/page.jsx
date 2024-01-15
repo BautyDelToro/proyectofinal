@@ -1,6 +1,5 @@
 'use client';
 import Imagentipo from '../Componentes/Imagentipo'
-import Link from 'next/link'
 import './pokemones.css'
 
 

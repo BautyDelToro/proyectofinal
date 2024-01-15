@@ -1,19 +1,6 @@
 .imagenlogotipo{
-    width: 150px;
+    max-width: 150px;
     border-radius: 50%;
-    border: solid #ffffff 2px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-}
-
-.pokemonestipo{
-    margin-left: 20px;
-    padding-left: 10px;
-}
-
-.titulotipo{
-    font-size: 15px;
 }
 
 .titulopoke{
@@ -23,26 +10,271 @@
     display: block;
 }
 
-.divMayor{
-    background-color:  rgb(211, 229, 255);
+h3{
+    height: 40px;
 }
 
+.divpokemones{
+    margin: 20px;
+}
 .divPokemon{
     height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color:  rgb(211, 229, 255);
-    margin: 10px 10px 10px 10px;
+    margin: 10px auto;
     padding-left: 10px;
+    padding-right: 50px;
     border: solid rgb(155 190 239) 2px;
     border-radius: 9px;
-    width: 98%;
+    max-width: 1600px;
     flex-grow: 1;
 }
 
-.divpokemones{
-    margin-left: 15px;
+
+@media (min-width:1610px){
+    .divPokemon{
+        width: 1550px;
+        overflow-x: auto;
+    } 
+    .Divtarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:1030px){
+    .divPokemon{
+        width: auto;
+        margin: 10px auto;
+        overflow-x: auto;
+        padding-right: 8%;
+    } 
+    .Divtarjetas{
+        display: grid;
+        grid-template-columns: 230px 230px 230px 230px 230px 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @keyframes moverDerecha{
+        100%{
+            transform: translate(1450px, 0px) 
+        }
+    }
+    .botonMovido{
+        display: inline-block;
+        transform: translate(1450px,0px);
+        margin-top: 60px;
+        margin-left: 5px;
+        color: var(--amarillooscuro);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        animation: moverIzquierda 4s;
+        animation-iteration-count: 1; 
+        animation-timing-function:cubic-bezier(.49,0,.49,.99);
+        animation-fill-mode: forwards;
+        border: solid rgb(155 190 239) 2px;
+        border-radius: 5px;
+    }
+    .botonEncendido{
+        display: inline-block;
+        margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--amarillooscuro);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        animation: moverDerecha 3.3s;
+        animation-iteration-count: 1; 
+        animation-timing-function:cubic-bezier(.49,0,.49,.99);
+        animation-fill-mode: forwards;
+        border: solid rgb(155 190 239) 2px;
+        border-radius: 5px;
+    }
+    .tarjeta10{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 2400ms;
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta20{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 2000ms;
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta30{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 1600ms;
+        height: 350px;
+        width: 90%;
+    }  
+    .tarjeta40{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 1300ms;
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta50{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 900ms;
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta60{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        height: 350px;
+        width: 90%;
+    }
+}
+
+@media (max-width:1030px){
+    .divPokemon{
+        width: auto;
+        margin: 10px auto;
+        overflow-x: auto;
+        padding-right: 8%;
+    } 
+    @keyframes moverDerecha{
+        100%{
+            transform: translate(615px, 0px) 
+        }
+    }
+    .botonMovido{
+        display: inline-block;
+        transform: translate(615px,0px);
+        margin-top: 60px;
+        margin-left: 5px;
+        color: var(--amarillooscuro);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        animation: moverIzquierda 3s;
+        animation-iteration-count: 1; 
+        animation-timing-function:cubic-bezier(.49,0,.49,.99);
+        animation-fill-mode: forwards;
+        border: solid rgb(155 190 239) 2px;
+        border-radius: 5px;
+    }
+    .Divtarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 40px;
+        margin-right: auto;
+        height: 100%;
+    }
+    .botonEncendido{
+        display: inline-block;
+        margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--amarillooscuro);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        animation: moverDerecha 3s;
+        animation-iteration-count: 1; 
+        animation-timing-function:cubic-bezier(.49,0,.49,.99);
+        animation-fill-mode: forwards;
+        border: solid rgb(155 190 239) 2px;
+        border-radius: 5px;
+    }
+    .tarjeta50{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta30{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;    
+        animation-delay: 1000ms;
+        height: 350px;
+        width: 90%;
+    }
+    .tarjeta10{
+        margin: 0px 5px 0px 5px;
+        padding: 10px 5px 20px 5px;
+        background-color: white;
+        border: solid var(--azulclaro) 2px;
+        border-radius: 9px;
+        color: var(--azulpokemon);
+        animation: desaparecer 500ms;
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+        animation-delay: 1300ms;    
+        height: 350px;
+        width: 90%;
+    }
+}
+
+@keyframes moverIzquierda{
+    100%{
+        transform: translate(0px, 0px) 
+    }
 }
 
 .divimagen{
@@ -53,7 +285,8 @@
 .botonDespliegue{
     display: inline-block;
     margin-top: 60px;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: white;
     color: var(--amarillooscuro);
     padding-top: 30px;
@@ -64,66 +297,32 @@
 
 .botonDespliegue:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
 
-.botonEncendido{
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 5px;
-    color: var(--amarillooscuro);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    animation: moverDerecha 4s;
-    animation-iteration-count: 1; 
-    animation-timing-function:cubic-bezier(.49,0,.49,.99);
-    animation-fill-mode: forwards;
-    border: solid rgb(155 190 239) 2px;
-    border-radius: 5px;
-}
-
-.botonEncendido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
+.botonEncendido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}  
 
 
-@keyframes moverDerecha{
-    100%{
-        transform: translate(1600px, 0px) 
-    }
-}  
-
-.botonMovido{
-    display: inline-block;
-    transform: translate(1600px,0px);
-    margin-top: 60px;
-    margin-left: 5px;
-    color: var(--amarillooscuro);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    animation: moverIzquierda 4s;
-    animation-iteration-count: 1; 
-    animation-timing-function:cubic-bezier(.49,0,.49,.99);
-    animation-fill-mode: forwards;
-    border: solid rgb(155 190 239) 2px;
-    border-radius: 5px;
-}
 
 .botonMovido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
-
-@keyframes moverIzquierda{
-    100%{
-        transform: translate(0px, 0px) 
-    }
-} 
-
 
 
 .flechaDerecha{
     max-height: 25px;
     max-width: 25px;
-    animation: flechaDerecha 4s;
+    animation: flechaDerecha 3.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
+.flechaIzquierda{
+    max-height: 25px;
+    max-width: 25px;
+    animation: flechaIzquierda 3.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scaleX(-1);
+}
+
 @keyframes flechaDerecha{
-    95%{
+    90%{
         transform: scaleX(1);
     }
     100%{
@@ -131,17 +330,8 @@
     }
 }
 
-.flechaIzquierda{
-    max-height: 25px;
-    max-width: 25px;
-    animation: flechaIzquierda 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    transform: scaleX(-1);
-}
-
 @keyframes flechaIzquierda{
-    95%{
+    90%{
         transform: scaleX(-1);
     }
     100%{
@@ -154,7 +344,178 @@
     margin-bottom: 13px;
 }
 
+.link{
+    transition: color 200ms;
+    display: inline-block;
+}
 .link:hover{
     color: var(--rojopokemon);
+}
+
+.tarjeta0{
+    margin: 0px auto;
+    padding: 10px 10px 70px 10px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    opacity: 0;
+    display: none;
+}
+
+.tarjeta11{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 1250ms;
+    height: 350px;
+    width: 90%;
+}
+    
+.tarjeta21{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 1500ms;
+    height: 350px;
+    width: 90%;
+}
+
+.tarjeta31{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 1800ms;
+    height: 350px;
+    width: 90%;
+}
+    
+.tarjeta41{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 2200ms;
+    height: 350px;
+    width: 90%;
+}
+
+.tarjeta51{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 2500ms;
+    height: 350px;
+    width: 90%;
+}
+    
+.tarjeta61{
+    opacity: 0;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 20px 5px;
+    background-color: white;
+    border: solid var(--azulclaro) 2px;
+    border-radius: 9px;
+    color: var(--azulpokemon);
+    animation: aparecer 500ms;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;    
+    animation-delay: 3000ms;
+    height: 350px;
+    width: 90%;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width:1030px){
+    .tarjeta11{width: 150px;}  
+    .tarjeta31{width: 150px;}
+    .tarjeta51{width: 150px;}
+    .tarjeta21{display: none;}  
+    .tarjeta41{display: none;}
+    .tarjeta61{display: none;}
+
+    .tarjeta10{max-width: 150px;}  
+    .tarjeta30{max-width: 150px;}  
+    .tarjeta50{max-width: 150px;}  
+    .tarjeta20{display: none;}  
+    .tarjeta40{display: none;}
+    .tarjeta60{display: none;}
+
+
+    @keyframes aparecer{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+.divSprite{
+    background-color:  rgb(211, 229, 255);
+    border: 1px solid var(--azulclaro);
+    border-radius: 4px;
+    max-width: 200px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes desaparecer{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
 }
 
