@@ -72,7 +72,7 @@ h3{
         color: var(--amarillooscuro);
         padding-top: 30px;
         padding-bottom: 30px;
-        animation: moverDerecha 3.5s;
+        animation: moverDerecha 4s;
         animation-iteration-count: 1; 
         animation-timing-function:cubic-bezier(.49,0,.49,.99);
         animation-fill-mode: forwards;
@@ -161,6 +161,21 @@ h3{
         animation-fill-mode: forwards;    
         height: 350px;
         width: 90%;
+    }
+    .flechaDerecha{
+        max-height: 25px;
+        max-width: 25px;
+        animation: flechaDerecha 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .flechaIzquierda{
+        max-height: 25px;
+        max-width: 25px;
+        animation: flechaIzquierda 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transform: scaleX(-1);
     }
 }
 
@@ -253,6 +268,21 @@ h3{
         height: 350px;
         width: 200px;
     }
+    .flechaDerecha{
+        max-height: 25px;
+        max-width: 25px;
+        animation: flechaDerecha 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .flechaIzquierda{
+        max-height: 25px;
+        max-width: 25px;
+        animation: flechaIzquierda 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transform: scaleX(-1);
+    }
 }
 @keyframes moverIzquierda{
     100%{
@@ -276,21 +306,7 @@ h3{
 .botonEncendido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}  
 .botonMovido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
 
-.flechaDerecha{
-    max-height: 25px;
-    max-width: 25px;
-    animation: flechaDerecha 3.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.flechaIzquierda{
-    max-height: 25px;
-    max-width: 25px;
-    animation: flechaIzquierda 3.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    transform: scaleX(-1);
-}
+
 @keyframes flechaDerecha{
     90%{
         transform: scaleX(1);
@@ -324,7 +340,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 800ms;
+    animation-delay: 1300ms;
     height: 350px;
     width: 90%;
 }
@@ -339,7 +355,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 1200ms;
+    animation-delay: 1700ms;
     height: 350px;
     width: 90%;
 }
@@ -354,7 +370,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 1500ms;
+    animation-delay: 2000ms;
     height: 350px;
     width: 90%;
 }
@@ -369,7 +385,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 1800ms;
+    animation-delay: 2400ms;
     height: 350px;
     width: 90%;
 }
@@ -384,7 +400,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 2200ms;
+    animation-delay: 2700ms;
     height: 350px;
     width: 90%;
 } 
@@ -399,7 +415,7 @@ h3{
     animation: aparecer 800ms;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;    
-    animation-delay: 2800ms;
+    animation-delay: 3700ms;
     height: 350px;
     width: 90%;
 }
