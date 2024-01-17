@@ -16,7 +16,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 export default function Home() {
   return (
     <main>
-      <h1>aaa</h1>
+      <h1 style={{color: "var(--rojooscuro)", display:"block"  ,marginRight:"auto" ,marginLeft:"auto"}}>Pokemon types: damage relations</h1>
       
     <div className='DivMayor'>
       <div className='divGrid' id='divGrid'>

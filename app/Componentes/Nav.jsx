@@ -8,7 +8,7 @@ export default function Nav(){
                 <a href="./"><img src="/imagenes/Poké_Ball_icon.svg.png" alt="Inicio" className="imagenlogo"/></a>
                 <ul className="lista">
                     <li>
-                        <Link href="./pokemones">Pokemons</Link>
+                        <Link href="./pokemones">Pokemon types</Link>
                     </li>
                 
                     <li>

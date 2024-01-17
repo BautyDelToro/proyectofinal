@@ -33,7 +33,7 @@ h3{
     flex-grow: 1;
 }
 
-@media (min-width:1030px){
+@media (min-width:1031px){
     .divPokemon{
         width: auto;
         margin: 10px auto;
@@ -177,6 +177,9 @@ h3{
         animation-fill-mode: forwards;
         transform: scaleX(-1);
     }
+    .botonShiny{
+        display: none;
+    }
 }
 
 @media (max-width:1030px){
@@ -184,7 +187,8 @@ h3{
         width: auto;
         margin: 10px auto;
         overflow-x: auto;
-        padding-right: 60px;
+        padding-right: 80px;
+        height: 410px;
     } 
     @keyframes moverDerecha{
         100%{transform: translate(770px, 0px) }
@@ -206,11 +210,12 @@ h3{
     }
     .Divtarjetas{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 200px 200px 200px;
         margin-left: 40px;
         margin-right: auto;
         height: 100%;
         width: 700px;
+        gap: 25px;
     }
     .botonEncendido{
         display: inline-block;
@@ -228,7 +233,7 @@ h3{
         border-radius: 5px;
     }
     .tarjeta50{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -241,7 +246,7 @@ h3{
         width: 200px;
     }
     .tarjeta30{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -255,7 +260,7 @@ h3{
         width: 200px;
     }
     .tarjeta10{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -283,7 +288,66 @@ h3{
         animation-fill-mode: forwards;
         transform: scaleX(-1);
     }
+    .tarjeta11{width: 200px;}  
+    .tarjeta31{width: 200px;}
+    .tarjeta51{width: 200px;}
+    .tarjeta21{display: none;}  
+    .tarjeta41{display: none;}
+    .tarjeta61{display: none;}
+
+    .tarjeta10{max-width: 200px;}  
+    .tarjeta30{max-width: 200px;}  
+    .tarjeta50{max-width: 200px;}  
+    .tarjeta20{display: none;}  
+    .tarjeta40{display: none;}
+    .tarjeta60{display: none;}
+
+    .botonShiny{
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 0, 0, 0);
+        border: none;
+        height: 50px;
+        width:50px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .botonShiny1{
+        color: rgb(250, 185, 0);
+        animation: brillito 500ms;
+        animation-timing-function: cubic-bezier(.19,.7,.4,.8);
+    }
+    .divBotonshiny{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        position: relative;
+        top: -15px;
+    }
+
+    .svgShiny{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    @keyframes brillito{
+        20%{
+            box-shadow: 0px 0px 0px 3px rgba(155, 25, 25, 0),
+                        0px 0px 0px 5px rgb(250, 185, 0);
+        }
+        40%{
+            box-shadow: 0px 0px 0px 5px rgba(155, 25, 25, 0),
+                        0px 0px 0px 7px rgb(250, 185, 0);
+        }
+        100%{
+            box-shadow: 0px 0px 0px 7px rgba(155, 25, 25, 0),
+                        0px 0px 0px 9px rgb(250, 185, 0),
+        }
+    }
 }
+
+
 @keyframes moverIzquierda{
     100%{
         transform: translate(0px, 0px) 
@@ -331,7 +395,7 @@ h3{
 }
 .tarjeta11{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -342,11 +406,11 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 1300ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 }
 .tarjeta21{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -357,11 +421,11 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 1700ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 }
 .tarjeta31{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -372,11 +436,11 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 2000ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 }
 .tarjeta41{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -387,11 +451,11 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 2400ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 }
 .tarjeta51{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -402,11 +466,11 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 2700ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 } 
 .tarjeta61{
     opacity: 0;
-    margin: 0px 5px 0px 5px;
+    margin:   auto 5px;
     padding: 10px 5px 20px 5px;
     background-color: white;
     border: solid var(--azulclaro) 2px;
@@ -417,7 +481,7 @@ h3{
     animation-fill-mode: forwards;    
     animation-delay: 3700ms;
     height: 350px;
-    width: 90%;
+    width: 200px;
 }
 @keyframes aparecer{
     0%{
@@ -430,21 +494,7 @@ h3{
         opacity: 1;
     }
 }
-@media (max-width:1030px){
-    .tarjeta11{width: 200px;}  
-    .tarjeta31{width: 200px;}
-    .tarjeta51{width: 200px;}
-    .tarjeta21{display: none;}  
-    .tarjeta41{display: none;}
-    .tarjeta61{display: none;}
 
-    .tarjeta10{max-width: 200px;}  
-    .tarjeta30{max-width: 200px;}  
-    .tarjeta50{max-width: 200px;}  
-    .tarjeta20{display: none;}  
-    .tarjeta40{display: none;}
-    .tarjeta60{display: none;}
-}
 .divSprite{
     background-color:  rgb(211, 229, 255);
     border: 1px solid var(--azulclaro);

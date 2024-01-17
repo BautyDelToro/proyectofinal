@@ -35,6 +35,7 @@
 .imagenTarjeta{
     max-width: 150px;
     max-height: auto;
+    border-radius: 2px;
 }
 
 .botonRelaciones{
@@ -43,7 +44,7 @@
     border-radius: 3px;
     height: 50px;
     width: auto;
-    color: var(--rojopokemon);
+    color: rgba(122, 24, 24, 0.881);
     margin-top: 10px;
     font-weight: 600;
 }

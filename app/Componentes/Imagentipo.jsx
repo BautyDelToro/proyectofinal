@@ -6,6 +6,10 @@ import { useState } from 'react';
 
 export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
         
+    const [eleccionShiny1, setEleccionShiny1] = useState(0)
+    const [eleccionShiny2, setEleccionShiny2] = useState(0)
+    const [eleccionShiny3, setEleccionShiny3] = useState(0)
+    
     const [cargandotipo, setCargandotipo] = useState(true) 
     const [cargando1, setCargando1] = useState(true) 
     const [cargando2, setCargando2] = useState(true) 
@@ -67,10 +71,53 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
     }
     
     const [boton, setBoton] = useState(0);
+    
+    var a
+
+    function triggerShiny(){
+        if(a===1){
+            if(eleccionShiny1===1){
+                setEleccionShiny1(0)
+                document.getElementById("botonShiny"+poke.name+titulo).classList.remove('botonShiny1');
+                document.getElementById("botonShiny"+poke.name+titulo).classList.add('botonShiny0'); 
+            }
+            else{
+                setEleccionShiny1(1)
+                document.getElementById("botonShiny"+poke.name+titulo).classList.add('botonShiny1');
+            }
+        }
+        else if(a===2){
+            if(eleccionShiny2===1){
+                setEleccionShiny2(0)
+                document.getElementById("botonShiny"+poke2.name).classList.remove('botonShiny1');
+                document.getElementById("botonShiny"+poke2.name).classList.add('botonShiny0'); 
+            }
+            else{
+                setEleccionShiny2(1)
+                document.getElementById("botonShiny"+poke2.name).classList.add('botonShiny1');   
+            }
+        }
+        else if(a===3){
+            if(eleccionShiny3===1){
+                setEleccionShiny3(0)
+                document.getElementById("botonShiny"+poke3.name).classList.remove('botonShiny1');
+                document.getElementById("botonShiny"+poke3.name).classList.add('botonShiny0'); 
+            }
+            else{
+                setEleccionShiny3(1)
+                document.getElementById("botonShiny"+poke3.name).classList.add('botonShiny1');   
+            }
+        }
+        
+    }
+    
     function botonusado(){
         
         if(boton===0 && cargandotipo===false && cargando1===false && cargando2===false && cargando3===false){
             setBoton(1);
+            setEleccionShiny1(0)
+            setEleccionShiny2(0)
+            setEleccionShiny3(0)
             document.getElementById("botonpoke"+titulo).classList.remove('botondespliegue')
             document.getElementById("botonpoke"+titulo).classList.add('botonEncendido');
 
@@ -123,6 +170,9 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
         }
         else if(boton===2 && cargandotipo===false && cargando1===false && cargando2===false && cargando3===false){
             setBoton(1);
+            setEleccionShiny1(0)
+            setEleccionShiny2(0)
+            setEleccionShiny3(0)
             document.getElementById("botonpoke"+titulo).classList.remove('botonMovido')
             document.getElementById("botonpoke"+titulo).classList.add('botonEncendido')
 
@@ -165,61 +215,41 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
            {(cargandotipo===false && cargando1===false && cargando2===false && cargando3===false) &&
             
             <>
-            {/* <div className='tarjeta0' id={'tarjetaRelaciones'+titulo}>
-            <h3>Damage relations</h3>
-            {(pokeTipo.damage_relations.no_damage_from[0]) &&
-            <h4>No damage from {pokeTipo.damage_relations.no_damage_from[0].name}</h4>
-            }
-            {(pokeTipo.damage_relations.half_damage_from[0]) &&
-            <h4>Half damage from {pokeTipo.damage_relations.half_damage_from[0].name}</h4>
-            }
-            {(pokeTipo.damage_relations.double_damage_from[0]) &&
-            <h4>Double damage from {pokeTipo.damage_relations.double_damage_from[0].name}</h4>
-            } 
-            {(pokeTipo.damage_relations.no_damage_to[0]) &&
-            <h4>No damage to {pokeTipo.damage_relations.no_damage_to[0].name}</h4>
-            }
-            {(pokeTipo.damage_relations.half_damage_to[0]) &&
-            <h4>Half damage to {pokeTipo.damage_relations.half_damage_to[0].name}</h4>
-            }
-            {(pokeTipo.damage_relations.double_damage_to[0]) &&
-            <h4>Double damage to {pokeTipo.damage_relations.double_damage_to[0].name}</h4>
-            }
-            
-
-            {(pokeTipo.damage_relations.no_damage_from[1]) &&
-            <h4>No damage from {pokeTipo.damage_relations.no_damage_from[1].name}</h4>
-            }
-            {(pokeTipo.damage_relations.half_damage_from[1]) &&
-            <h4>Half damage from {pokeTipo.damage_relations.half_damage_from[1].name}</h4>
-            }
-            {(pokeTipo.damage_relations.double_damage_from[1]) &&
-            <h4>Double damage from {pokeTipo.damage_relations.double_damage_from[1].name}</h4>
-            } 
-            {(pokeTipo.damage_relations.no_damage_to[1]) &&
-            <h4>No damage to {pokeTipo.damage_relations.no_damage_to[1].name}</h4>
-            }
-            {(pokeTipo.damage_relations.half_damage_to[1]) &&
-            <h4>Half damage to {pokeTipo.damage_relations.half_damage_to[1].name}</h4>
-            }
-            {(pokeTipo.damage_relations.double_damage_to[1]) &&
-            <h4>Double damage to {pokeTipo.damage_relations.double_damage_to[1].name}</h4>
-            }
-            </div> */}
-            
             <div className='Divtarjetas'>
                 <div className='tarjeta0' id={'tarjeta1'+poke.name+titulo}>
-                <h3>{poke.name}</h3>        
+                    {(eleccionShiny1===0) &&
+                    <>
+                    <h3>{poke.name}</h3>        
                     <div className='divSprite'>
-                       <img src={poke.sprites.front_default} alt={poke.name}/>
-                        <img src={poke.sprites.back_default} alt={poke.name}/> 
+                    <img src={poke.sprites.front_default} alt={poke.name}/>
+                    <img src={poke.sprites.back_default} alt={poke.name}/>
                     </div>
+                    </>
+                    } 
+                    {(eleccionShiny1===1) &&
+                    <>
+                    <h3>{poke.name} shiny</h3>        
+                    <div className='divSprite'>
+                    <img src={poke.sprites.front_shiny} alt={poke.name+"shiny"}/>
+                    <img src={poke.sprites.back_shiny} alt={poke.name+"shiny"}/>
+                    </div>
+                    </>
+                    } 
                 <h4 className='texto'>Height: {poke.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke.weight/10} kg</h4>
                 <h4 className='texto'>Abilitie:</h4>
                 <Link className="link" href={"../habilidades#"+poke.abilities[0].ability.name}>
                 <h4 className='texto'>{poke.abilities[0].ability.name}</h4>    
-                </Link>   
+                </Link>
+
+                <div className='divBotonshiny'>
+                <button id={'botonShiny'+poke.name+titulo} className='botonShiny' onClick={()=>triggerShiny(a=1)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" className="svgShiny" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                </button>
+                </div>
+
                 </div>
                 
                 <div className='tarjeta0' id={'tarjeta1'+poke.name+'shiny'+titulo}>
@@ -238,17 +268,39 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
 
 
                 <div className='tarjeta0' id={'tarjeta2'+poke2.name}>
-                <h3>{poke2.name}</h3>        
-                <div className='divSprite'>
+                    {(eleccionShiny2===0) &&
+                    <>
+                    <h3>{poke2.name}</h3>        
+                    <div className='divSprite'>
                     <img src={poke2.sprites.front_default} alt={poke2.name}/>
-                    <img src={poke2.sprites.back_default} alt={poke2.name}/> 
-                </div>
+                    <img src={poke2.sprites.back_default} alt={poke2.name}/>
+                    </div>
+                    </>
+                    } 
+                    {(eleccionShiny2===1) &&
+                    <>
+                    <h3>{poke2.name} shiny</h3>        
+                    <div className='divSprite'>
+                    <img src={poke2.sprites.front_shiny} alt={poke2.name+"shiny"}/>
+                    <img src={poke2.sprites.back_shiny} alt={poke2.name+"shiny"}/>
+                    </div>
+                    </>
+                    } 
                 <h4 className='texto'>Height: {poke2.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke2.weight/10} kg</h4>
                 <h4 className='texto'>Abilitie:</h4>
                 <Link className="link" href={"../habilidades#"+poke2.abilities[0].ability.name}>
                 <h4 className='texto'>{poke2.abilities[0].ability.name}</h4>    
-                </Link>            
+                </Link>
+
+                    <div className='divBotonshiny'>
+                        <button id={'botonShiny'+poke2.name} className='botonShiny' onClick={()=>triggerShiny(a=2)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" className="svgShiny" viewBox="0 0 16 16">
+                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                        </svg>
+                        </button>
+                    </div>
+                
                 </div>
                 
                 <div className='tarjeta0' id={'tarjeta2'+poke2.name+'shiny'}>
@@ -267,17 +319,39 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
 
 
                 <div className='tarjeta0' id={'tarjeta3'+poke3.name}>
-                <h3>{poke3.name}</h3>        
-                <div className='divSprite'>
+                    {(eleccionShiny3===0) &&
+                    <>
+                    <h3>{poke3.name}</h3>        
+                    <div className='divSprite'>
                     <img src={poke3.sprites.front_default} alt={poke3.name}/>
-                    <img src={poke3.sprites.back_default} alt={poke3.name}/> 
-                </div>
+                    <img src={poke3.sprites.back_default} alt={poke3.name}/>
+                    </div>
+                    </>
+                    } 
+                    {(eleccionShiny3===1) &&
+                    <>
+                    <h3>{poke3.name} shiny</h3>        
+                    <div className='divSprite'>
+                    <img src={poke3.sprites.front_shiny} alt={poke3.name+"shiny"}/>
+                    <img src={poke3.sprites.back_shiny} alt={poke3.name+"shiny"}/>
+                    </div>
+                    </>
+                    } 
                 <h4 className='texto'>Height: {poke3.height/10} m</h4>
                 <h4 className='texto'>Weight: {poke3.weight/10} kg</h4>
                 <h4 className='texto'>Abilitie:</h4>
                 <Link className="link" href={"../habilidades#"+poke3.abilities[0].ability.name}>
                 <h4 className='texto'>{poke3.abilities[0].ability.name}</h4>    
                 </Link>            
+                
+                    <div className='divBotonshiny'>
+                        <button id={'botonShiny'+poke3.name} className='botonShiny' onClick={()=>triggerShiny(a=3)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" className="svgShiny" viewBox="0 0 16 16">
+                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                        </svg>
+                        </button>
+                    </div>
+                
                 </div>
                 
                 <div className='tarjeta0' id={'tarjeta3'+poke3.name+'shiny'}>
@@ -295,7 +369,8 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
                 </div>
             </div>
             </>
-           }
+            }
+            
         </div>
     )
 }

@@ -40,7 +40,6 @@ export default function TablaRelaciones(titulo, imagen, tipo){
             document.getElementById("divGrid").classList.add('divGrid');
 
             tipos.map((tipo2)=>{
-                console.log(tipo2)
                 if(a===tipo2){
                 }
                 else{document.getElementById("TarjetaRelaciones"+tipo2).classList.remove('TarjetaRelaciones0')
