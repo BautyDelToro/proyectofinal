@@ -66,7 +66,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Poke Ball</h2>
-        <img src="./pokeballs/Poke_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Poke_Ball.png" className='imagenpokebola' alt='Poke Ball'/>
         <h4>Capture ratio: 1</h4>
         <p>It is used to capture Pokémon. It is considered the most common ball.</p>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Super Ball</h2>
-        <img src="./pokeballs/Super_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Super_Ball.png" className='imagenpokebola' alt='Super Ball'/>
         <h4>Capture ratio: 1.5</h4>
         <p>It is used to capture Pokémon, with a higher success rate than the Poké Ball, but less than the Ultra Ball. Therefore, it is intermediate in general use.</p>
         </div>
@@ -84,7 +84,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Ultra Ball</h2>
-        <img src="./pokeballs/Ultra_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Ultra_Ball.png" className='imagenpokebola' alt='Ultra Ball'/>
         <h4>Capture ratio: 2</h4>
         <p>It is used to capture Pokémon, with a higher success rate than the Super Ball. Therefore, it is the most effective in general use.</p>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Master Ball</h2>
-        <img src="./pokeballs/Master_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Master_Ball.png" className='imagenpokebola' alt='Master Ball'/>
         <h4>Capture ratio: 255</h4>
         <p>It is used to capture Pokémon in only one use, being the best ball of all, since it never fails.</p>
         </div>
@@ -102,20 +102,21 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Level Ball</h2>
-        <img src="./pokeballs/Level_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Level_Ball.png" className='imagenpokebola' alt='Level Ball'/>
         <h4>Capture ratio:</h4>
-        <p>
+        {/* <p>
           - x1 when the level of the trainer's Pokémon is equal to or lower than the level of the target's level.
           - x2 when the level of the trainer's Pokémon is higher than the target's level.
           - x4 when the level of the trainer's Pokémon is twice or more than the target's level.
-          - x8 when the level of the trainer's Pokémon is four times or more than the target's level.</p>
+          - x8 when the level of the trainer's Pokémon is four times or more than the target's level.
+        </p> */}
         </div>
         </SwiperSlide>
 
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Rapid Ball</h2>
-        <img src="./pokeballs/Rapid_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Rapid_Ball.png" className='imagenpokebola' alt='Rapid Ball'/>
         <p>
           It is used to capture Pokémon that flee with ease or with high speed
           - if used against a Pokémon with a base speed of 100 or more, the capture ratio will be x4 .
@@ -127,7 +128,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Quick Ball</h2>
-        <img src="./pokeballs/Quick_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Quick_Ball.png" className='imagenpokebola' alt='Quick Ball'/>
         <h4>Capture ratio:</h4>
         <p>
           If used on the first turn of a combat, the ratio multiplier is x5.
@@ -139,7 +140,7 @@ export default function Home() {
         <SwiperSlide className='tarjetapokebola'>
         <div>
         <h2 className='Titulopokebola'>Love Ball</h2>
-        <img src="./pokeballs/Love_Ball.png" className='imagenpokebola'/>
+        <img src="./pokeballs/Love_Ball.png" className='imagenpokebola' alt='Love Ball'/>
         <h4>Capture ratio: 8</h4>
         <p>Increases the chance of capturing a Pokémon of the same species as the one used by the user, as long as they are of the opposite gender.</p>
         </div>
