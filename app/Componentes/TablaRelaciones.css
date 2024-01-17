@@ -1,0 +1,145 @@
+.TarjetaRelaciones1{
+    max-width: 150px;
+    max-height: 250px;
+    margin-right:auto ;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: aparecer 4000ms;
+    animation-fill-mode: forwards;
+}
+
+.contenedorLightbox0, .lightbox_Eleccion0, .TarjetaRelaciones0, .divGrid0{
+    display: none;
+}
+
+.lightbox_Eleccion1{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-height: 500px;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    color: rgb(49, 45, 45);
+    animation: aparecer 1000ms;
+    animation-fill-mode: forwards;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.imagenTarjeta{
+    max-width: 150px;
+    max-height: auto;
+}
+
+.botonRelaciones{
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: auto;
+    color: var(--rojopokemon);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.botonRelaciones:hover{
+    animation: colorfondo 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorfondo{
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        box-shadow: 0px 0px 0px 2px white;
+        border: none;
+    }
+}
+
+
+.botonCerrar{
+    background-color: rgba(122, 24, 24, 0.881);
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: auto;
+    color: white;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+@media(max-width:700px){
+    .lightbox_Eleccion1{
+        width: 300px;
+        font-size: 15px;
+        height: auto;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .divDaños{
+        flex-wrap: wrap;
+        height: auto;
+        gap: 2px;
+    }
+    h3{
+        display: block;
+    }
+}
+
+@media(max-width:1100px){
+    .imagenTarjeta{
+        max-width: 100px;
+    }
+    .TarjetaRelaciones1{
+        max-width: 100px;
+        height: auto;
+    }
+    .botonRelaciones{
+        height: 100%;
+        width: auto;
+    }
+}
+
+
+
+.botonCerrar:hover{
+    animation: colorfondo2 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorfondo2{
+    100%{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px 2px  rgb(122, 24, 24);
+        color:  rgb(122, 24, 24);
+    }
+}
+
+@keyframes aparecer{
+    100%{
+       opacity: 1;
+    }
+}
+
+.divDaños{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.tituloRelaciones{
+    margin: 3px;
+}
+
+p{
+    margin: 0px;
+}

@@ -12,7 +12,6 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
     const [cargando1, setCargando1] = useState(true) 
     const [cargando2, setCargando2] = useState(true) 
     const [cargando3, setCargando3] = useState(true) 
-    const [cargando4, setCargando4] = useState(true) 
 
     const [boton1, setBoton1] = useState(0);
     const [boton2, setBoton2] = useState(0);
