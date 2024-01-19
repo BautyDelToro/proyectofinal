@@ -107,13 +107,13 @@ export default function Home() {
         <img src="./pokeballs/Level_Ball.png" className='imagenpokebola' alt='Level Ball'/>
         <h4>Capture ratio:</h4>
         <p>
-          - x1 when the level of the trainer's Pokémon is equal to or lower than the level of the target's level.
+          - x1 when the level of the trainer`s Pokémon is equal to or lower than the level of the target`s pokemon level.
           <br />
-          - x2 when the level of the trainer's Pokémon is higher than the target's level.
+          - x2 when the level of the trainer`s Pokémon is higher than the target`s pokemon level.
           <br />
-          - x4 when the level of the trainer's Pokémon is twice or more than the target's level.
+          - x4 when the level of the trainer`s Pokémon is twice or more than the target`s pokemon level.
           <br />
-          - x8 when the level of the trainer's Pokémon is four times or more than the target's level.
+          - x8 when the level of the trainer`s Pokémon is four times or more than the target`s pokemon level.
         </p>
         </div>
         </SwiperSlide>
