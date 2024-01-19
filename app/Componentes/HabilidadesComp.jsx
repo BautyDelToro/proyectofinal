@@ -19,7 +19,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
 
     if(cargando1===true ){
         const fetchpoke = async()=>{
-            const res= await fetch(("https://pokeapi.co/api/v2/ability/"+Habilidad1.Habilidad1));
+            const res= await fetch(("https://pokeapi.co/api/v2/move/"+Habilidad1.Habilidad1));
             if(res.ok===true){
                 const data = await res.json()
                 setHabilidad1(data) 
@@ -31,7 +31,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
 
     if(cargando2===true ){
         const fetchpoke = async()=>{
-            const res= await fetch(("https://pokeapi.co/api/v2/ability/"+Habilidad1.Habilidad2));
+            const res= await fetch(("https://pokeapi.co/api/v2/move/"+Habilidad1.Habilidad2));
             if(res.ok===true){
                 const data = await res.json()
                 setHabilidad2(data) 
@@ -43,7 +43,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
 
     if(cargando3===true ){
         const fetchpoke = async()=>{
-            const res= await fetch(("https://pokeapi.co/api/v2/ability/"+Habilidad1.Habilidad3));
+            const res= await fetch(("https://pokeapi.co/api/v2/move/"+Habilidad1.Habilidad3));
             if(res.ok===true){
                 const data = await res.json()
                 setHabilidad3(data) 
@@ -63,7 +63,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad1.name+"cruz").classList.remove('svgcruz0');
             document.getElementById(habilidad1.name+"cruz").classList.add('svgcruz1');
             document.getElementById(habilidad1.name+"divi").classList.remove('divi0');
-            document.getElementById(habilidad1.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad1.name+"divi").classList.add('divi1izquierda');
         }
         else if(boton1===1){
             setBoton1(2)
@@ -73,8 +73,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad1.name+"svg").classList.add('svgboton2');
             document.getElementById(habilidad1.name+"cruz").classList.remove('svgcruz1');
             document.getElementById(habilidad1.name+"cruz").classList.add('svgcruz2');
-            document.getElementById(habilidad1.name+"divi").classList.remove('divi1');
-            document.getElementById(habilidad1.name+"divi").classList.add('divi2');
+            document.getElementById(habilidad1.name+"divi").classList.remove('divi1izquierda');
+            document.getElementById(habilidad1.name+"divi").classList.add('divi2izquierda');
         }
         else if(boton1===2){
             setBoton1(1)
@@ -84,8 +84,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad1.name+"svg").classList.add('svgboton1');
             document.getElementById(habilidad1.name+"cruz").classList.remove('svgcruz2');
             document.getElementById(habilidad1.name+"cruz").classList.add('svgcruz1');
-            document.getElementById(habilidad1.name+"divi").classList.remove('divi2');
-            document.getElementById(habilidad1.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad1.name+"divi").classList.remove('divi2izquierda');
+            document.getElementById(habilidad1.name+"divi").classList.add('divi1izquierda');
         }
     }
 
@@ -100,7 +100,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad2.name+"cruz").classList.remove('svgcruz0');
             document.getElementById(habilidad2.name+"cruz").classList.add('svgcruz1');
             document.getElementById(habilidad2.name+"divi").classList.remove('divi0');
-            document.getElementById(habilidad2.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad2.name+"divi").classList.add('divi1medio');
         }
         else if(boton2===1){
             setBoton2(2)
@@ -110,8 +110,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad2.name+"svg").classList.add('svgboton2');
             document.getElementById(habilidad2.name+"cruz").classList.remove('svgcruz1');
             document.getElementById(habilidad2.name+"cruz").classList.add('svgcruz2');
-            document.getElementById(habilidad2.name+"divi").classList.remove('divi1');
-            document.getElementById(habilidad2.name+"divi").classList.add('divi2');
+            document.getElementById(habilidad2.name+"divi").classList.remove('divi1medio');
+            document.getElementById(habilidad2.name+"divi").classList.add('divi2medio');
         }
         else if(boton2===2){
             setBoton2(1)
@@ -121,8 +121,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad2.name+"svg").classList.add('svgboton1');
             document.getElementById(habilidad2.name+"cruz").classList.remove('svgcruz2');
             document.getElementById(habilidad2.name+"cruz").classList.add('svgcruz1');
-            document.getElementById(habilidad2.name+"divi").classList.remove('divi2');
-            document.getElementById(habilidad2.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad2.name+"divi").classList.remove('divi2medio');
+            document.getElementById(habilidad2.name+"divi").classList.add('divi1medio');
         }
     }
 
@@ -137,7 +137,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad3.name+"cruz").classList.remove('svgcruz0');
             document.getElementById(habilidad3.name+"cruz").classList.add('svgcruz1');
             document.getElementById(habilidad3.name+"divi").classList.remove('divi0');
-            document.getElementById(habilidad3.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad3.name+"divi").classList.add('divi1derecha');
         }
         else if(boton3===1){
             setBoton3(2)
@@ -147,8 +147,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad3.name+"svg").classList.add('svgboton2');
             document.getElementById(habilidad3.name+"cruz").classList.remove('svgcruz1');
             document.getElementById(habilidad3.name+"cruz").classList.add('svgcruz2');
-            document.getElementById(habilidad3.name+"divi").classList.remove('divi1');
-            document.getElementById(habilidad3.name+"divi").classList.add('divi2');
+            document.getElementById(habilidad3.name+"divi").classList.remove('divi1derecha');
+            document.getElementById(habilidad3.name+"divi").classList.add('divi2derecha');
         }
         else if(boton3===2){
             setBoton3(1)
@@ -158,8 +158,8 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
             document.getElementById(habilidad3.name+"svg").classList.add('svgboton1');
             document.getElementById(habilidad3.name+"cruz").classList.remove('svgcruz2');
             document.getElementById(habilidad3.name+"cruz").classList.add('svgcruz1');
-            document.getElementById(habilidad3.name+"divi").classList.remove('divi2');
-            document.getElementById(habilidad3.name+"divi").classList.add('divi1');
+            document.getElementById(habilidad3.name+"divi").classList.remove('divi2derecha');
+            document.getElementById(habilidad3.name+"divi").classList.add('divi1derecha');
         }
     }
 
@@ -192,7 +192,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
                         </svg>
                 </button>
             
-                <div className="divi" id={habilidad1.name+"divi"}>
+                <div className="divi0" id={habilidad1.name+"divi"}>
                 <p className="texto0" id={habilidad1.name+"texto"}>{habilidad1.effect_entries[0].effect}</p>
                 </div>
             </div>
@@ -211,7 +211,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
                         </svg>
                 </button>
             
-                <div className="divi" id={habilidad2.name+"divi"}>
+                <div className="divi0" id={habilidad2.name+"divi"}>
                 <p className="texto0" id={habilidad2.name+"texto"}>{habilidad2.effect_entries[0].effect}</p>
                 </div>
             </div>
@@ -231,7 +231,7 @@ export default function HabilidadesComp(Habilidad1, Habilidad2, Habilidad3){
                         </svg>
                 </button>
             
-                <div className="divi" id={habilidad3.name+"divi"}>
+                <div className="divi0" id={habilidad3.name+"divi"}>
                 <p className="texto0" id={habilidad3.name+"texto"}>{habilidad3.effect_entries[0].effect}</p>
                 </div>
             </div>

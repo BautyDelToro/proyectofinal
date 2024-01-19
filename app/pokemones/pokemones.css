@@ -2,6 +2,26 @@
     max-width: 150px;
     border-radius: 50%;
 }
+#botonAbrirtodo{
+    width: 120px;
+    height: 60px;
+    background-color: white;
+    color: var(--azulpokemon);
+    border-radius: 3px;
+    font-size: 20px;
+    border: solid var(--azulpokemon) 2px;
+}
+#botonAbrirtodo:hover{
+    animation: hoverboton 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes hoverboton{
+    100%{
+        background-color: var(--azulpokemon);
+        color: white;
+        box-shadow: 0px 0px 0px 2px white;  
+    }
+}
 .titulopoke{
     padding-left: 5px;
     font-size: 20px;
@@ -80,7 +100,7 @@ h3{
         border-radius: 5px;
     }
     .tarjeta10{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -91,10 +111,10 @@ h3{
         animation-fill-mode: forwards;    
         animation-delay: 2400ms;
         height: 350px;
-        width: 90%;
+        width: 200px;
     }
     .tarjeta20{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -105,10 +125,10 @@ h3{
         animation-fill-mode: forwards;    
         animation-delay: 2000ms;
         height: 350px;
-        width: 90%;
+        width: 200px;
     }
     .tarjeta30{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -119,10 +139,10 @@ h3{
         animation-fill-mode: forwards;    
         animation-delay: 1600ms;
         height: 350px;
-        width: 90%;
+        width: 200px;
     }  
     .tarjeta40{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -133,10 +153,10 @@ h3{
         animation-fill-mode: forwards;    
         animation-delay: 1300ms;
         height: 350px;
-        width: 90%;
+        width: 200px;
     }
     .tarjeta50{
-        margin: 0px 5px 0px 5px;
+        margin:   auto 5px;
         padding: 10px 5px 20px 5px;
         background-color: white;
         border: solid var(--azulclaro) 2px;
@@ -147,7 +167,7 @@ h3{
         animation-fill-mode: forwards;    
         animation-delay: 900ms;
         height: 350px;
-        width: 90%;
+        width: 200px;
     }
     .tarjeta60{
         margin: 0px 5px 0px 5px;
@@ -160,7 +180,7 @@ h3{
         animation-iteration-count: 1; 
         animation-fill-mode: forwards;    
         height: 350px;
-        width: 90%;
+        width: 200px;
     }
     .flechaDerecha{
         max-height: 25px;
@@ -310,6 +330,12 @@ h3{
         width:50px;
         border-radius: 50%;
         display: inline-block;
+    }
+    .botonShiny:hover{
+        color: rgb(250, 185, 0);        
+    }
+    .botonShiny1:hover{
+        color: rgb(0, 0, 0);        
     }
     .botonShiny1{
         color: rgb(250, 185, 0);

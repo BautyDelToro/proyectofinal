@@ -23,7 +23,6 @@ export default function Home() {
       <TablaRelaciones titulo="Fuego" imagen="/imagenes/Fuego.png" tipo="fire" />
       <TablaRelaciones titulo="Lucha" imagen="/imagenes/Lucha.png" tipo="fighting"/>
       <TablaRelaciones titulo="Tierra" imagen="/imagenes/Tierra.png" tipo="ground" />
-      <TablaRelaciones titulo="Psíquico" imagen="/imagenes/Psiquico.png" tipo="psychic" />
       <TablaRelaciones titulo="Eléctrico" imagen="/imagenes/Electrico.png" tipo="electric" />
       <TablaRelaciones titulo="Roca" imagen="/imagenes/Roca.png" tipo="rock" />
       <TablaRelaciones titulo="Bicho" imagen="/imagenes/Bicho.png" tipo="bug" />
@@ -35,6 +34,7 @@ export default function Home() {
       <TablaRelaciones titulo="Dragón" imagen="/imagenes/Dragon.png" tipo="dragon" />
       <TablaRelaciones titulo="Veneno" imagen="/imagenes/Veneno.png" tipo="poison" />
       <TablaRelaciones titulo="Hada" imagen="/imagenes/Hada.png" tipo="fairy" />
+      <TablaRelaciones titulo="Psíquico" imagen="/imagenes/Psiquico.png" tipo="psychic" />
       <TablaRelaciones titulo="Fantasma" imagen="/imagenes/Fantasma.png" tipo="ghost" />
       <TablaRelaciones titulo="Siniestro" imagen="/imagenes/Siniestro.png" tipo="dark" />
       <TablaRelaciones titulo="Normal" imagen="/imagenes/Normal.png" tipo="normal" />

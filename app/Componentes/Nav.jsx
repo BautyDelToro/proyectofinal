@@ -12,7 +12,7 @@ export default function Nav(){
                     </li>
                 
                     <li>
-                        <Link href="./habilidades">Abilities</Link>
+                        <Link href="./habilidades">Moves</Link>
                     </li>
 
                     <li>

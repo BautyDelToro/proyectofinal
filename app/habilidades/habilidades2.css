@@ -1,3 +1,29 @@
+@media(max-width:800px){
+    .divhabilidades{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 1200px;
+        gap: 10px;
+    }
+    .divi1{
+        max-height: 130px;
+        overflow-y: auto;
+    }
+}
+
+@media(min-width:800px){
+    .divhabilidades{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 200px;
+        padding-left: 30px;
+        margin: 30px 20px;
+        padding: 80px 0px;    
+        gap: 10px;
+    }
+}
+
 .divgrandeizquierda{
     display: flex;
     flex-direction: column;
@@ -31,51 +57,79 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;  
 }
-
-.divhabilidades{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 300px;
-    padding-left: 30px;
-    margin: 30px 20px;
-    padding: 80px 0px;
-}
 .divHabilidades{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 200px;
 }
-.divi1{
-    margin: 10px;
+.divi1derecha, .divi1medio, .divi1izquierda{
     opacity: 0;
-    background-color: rgb(201, 214, 230);
-    color:var(--azuloscuro);
     padding: 10px;
-    border: solid 3px var(--azuloscuro);
     border-radius: 3px;
     animation: aparecer 1s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;  
     animation-delay: 1.5s;
     width: 80%;
-    margin:auto;
+    margin: 5px auto auto auto;
+    overflow-y: auto;
+    max-height: 250px;
+    margin: auto;
+    font-weight: 400;
+}
+.divi1derecha{
+    background-color: rgb(213, 229, 183);
+    border: 2px solid var(--verdepokemon);
+    .texto1{
+        color: var(--verdepokemon);
+    }
+}
+.divi1medio{
+    background-color: rgb(255 200 5);
+    color: rgb(27 70 131);
+    border: 2px solid #b02a20;
+    margin: auto;
+}.divi1izquierda{
+    background-color: rgb(181, 198, 236);
+    border: 2px solid var(--azulpokemon);
+    .texto1{
+        color: var(--azulpokemon);
+    }
 }
 .divi0{
     display: none;
 }
-.divi2{
-    background-color: rgb(201, 214, 230);
-    color:var(--azuloscuro);
+.divi2derecha, .divi2medio, .divi2izquierda{
     padding: 10px;
-    border: solid 3px var(--azuloscuro);
     border-radius: 3px;
     animation: desaparecer 1s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;  
-    margin:auto;
+    animation-delay: 1.5s;
     width: 80%;
+    margin: 5px auto auto auto;
+    overflow-y: auto;
+    max-height: 250px;
+    margin: auto;
+}
+.divi2derecha{
+    background-color: rgb(213, 229, 183);
+    border: 2px solid var(--verdepokemon);
+    .texto2{
+        color: var(--verdepokemon);
+    }
+}
+.divi2medio{
+    background-color: rgb(255 200 5);
+    color: rgb(27 70 131);
+    border: 2px solid #b02a20;
+}.divi2izquierda{
+    background-color: rgb(192, 201, 220);
+    border: 2px solid var(--azulpokemon);
+    .texto2{
+        color: var(--azulpokemon);
+    }
 }
 .divHabi0derecha{
     display: inline-block;
@@ -160,7 +214,6 @@
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;  
     animation-delay: 1.5s;
-    color: var(--azuloscuro);
     font-weight: 500;
 }
 .texto2{
