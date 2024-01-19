@@ -1,3 +1,5 @@
+import './contacto.css'
+
 export default function Contacto(){
     return(
         <div>
@@ -12,23 +14,27 @@ export default function Contacto(){
                 <textarea name="comentarios"></textarea>
             </form>
                 
-            <form action="" className='formulario' method='post'>
-                <label>
-                    Nombre<input type="text" name='nombre'/>
+            <div className='divFormulario'>
+                <form action="" className="formulario" method='post'>
+                <label className="Nombre">
+                    Name<input type="text" name='nombre'/>
                 </label>
         
-                <label>
-                    Mail <input type="email" name='mail'/>
+                <label className='mail'>
+                    Mail <input type="email" name='mail' className='aa'/>
                 </label>
                 
-                <label>
+                <label className='comentarios'>
                     <textarea name="comentarios"></textarea>
                 </label>
         
                 <input type="hidden" name="form-name" value="contacto" />
 
-                <input type="submit" name='enviar' />
-            </form>
+                <input type="submit" value="Submit" name='Submit' className='submit' />
+                </form> 
+            </div>
+            
+            
         </div>
     )
 }
