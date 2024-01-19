@@ -8,7 +8,7 @@ export default function Pokemones (){
     
     return(
         <div className='divpokemones'>
-            <h1>Pokemons by type</h1>
+            <h1 className='tituloGrande'>Pokemons by type</h1>
             <div>
                 <Imagentipo titulo="fire" imagen="/imagenes/Fuego.png" idd="fire" Poke2="braixen" Poke3="infernape" />
                 <Imagentipo titulo="fighting" imagen="/imagenes/Lucha.png" idd="fighting" Poke2="machamp" Poke3="lucario"/>

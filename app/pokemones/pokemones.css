@@ -43,11 +43,11 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color:  rgb(211, 229, 255);
+    background: rgb(90,111,159);
+    background: linear-gradient(270deg, rgba(68, 114, 220, 0.556) 0%, rgba(40, 130, 215, 0.27) 100%);
     margin: 10px auto;
     padding-left: 10px;
     padding-right: 50px;
-    border: solid rgb(155 190 239) 2px;
     border-radius: 9px;
     max-width: 1600px;
     flex-grow: 1;
@@ -356,10 +356,22 @@ h3{
         height: 100%;
         margin: auto;
     }
+    .divSpriteShiny{
+        background-color:  rgb(255, 241, 211);
+        border: 1px solid var(--amarillooscuro);
+        border-radius: 4px;
+        max-width: 200px;
+        margin: 5px auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
+    
     @keyframes brillito{
         20%{
-            box-shadow: 0px 0px 0px 3px rgba(155, 25, 25, 0),
+            box-shadow: 0px 0px 0px 3px rgba(155, 25, 25, 0.1),
                         0px 0px 0px 5px rgb(250, 185, 0);
         }
         40%{
@@ -540,5 +552,9 @@ h3{
         opacity: 0;
         display: none;
     }
+}
+
+.tituloGrande{
+    color: var(--azulpokemon);
 }
 

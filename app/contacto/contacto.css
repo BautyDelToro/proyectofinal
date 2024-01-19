@@ -1,16 +1,394 @@
-.divFormulario{
+
+
+@media(min-width:1150px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 400px;
+        border: solid 3px rgba(255, 255, 255, 0.15);
+        gap: 30px;
+        border-radius: 10px;
+        /* background: rgb(168,168,168);
+        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
+        /* background-image: url(../../public/imagenes/pokemon.jpeg);
+        background-size:auto; 
+        background-repeat: no-repeat;
+        background-attachment:scroll; */
+        backdrop-filter: blur(200px);
+        background-color: rgba(255, 255, 255, 0.15);
+        padding-bottom: 50px;
+        margin: auto;
+    }  
+    .Label{
+        position: relative;
+        width: 470px;
+        margin: auto;
+        height: 56px;
+    }
+    .mail, .comentarios, .Nombre{
+        background-color: #ffffff00;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 100px;
+        margin: auto;
+        border: 2px solid  rgba(20, 67, 9, 0.754);
+        mix-blend-mode:screen;
+        color: black;
+        resize: none;
+        padding-left: 10px;
+    }
+    .divFormulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 200px;
+        background: rgb(12,46,3);
+        background: linear-gradient(270deg, rgba(12,46,3,1) 0%, rgba(70,142,68,1) 50%, rgba(164,237,170,1) 100%);
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+    .Gardevoir{
+        right: 50px;
+        bottom: 60px;
+    }
+    
+    .Diantha{
+        right: 25px;
+        bottom: 50px;
+    }
+    .svgPerfil{
+        position: absolute;
+        left: 80%;
+        top: 13px;
+        bottom: auto;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media(max-width:1530px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        border-radius: 10px;
+        /* background: rgb(168,168,168);
+        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
+        /* background-image: url(../../public/imagenes/pokemon.jpeg);
+        background-size:auto; 
+        background-repeat: no-repeat;
+        background-attachment:scroll; */
+        background-color: rgba(255, 255, 255, 0.067);
+        margin: auto;
+        height: 80%;
+    }
+    .divFormulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 200px;
+        background: rgb(12,46,3);
+        background: linear-gradient(270deg, rgba(12,46,3,1) 0%, rgba(70,142,68,1) 50%, rgba(164,237,170,1) 100%);
+        width: 100%;
+        position: relative;
+        height: 500px;
+    }
+    .Label{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: 56px;
+    }
+    .mail, .comentarios, .Nombre{
+        background-color: #ffffff00;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 100px;
+        margin: auto;
+        border: 2px solid  rgba(20, 67, 9, 0.754);
+        mix-blend-mode:screen;
+        color: black;
+        resize: none;
+        padding-left: 10px;
+    }
+    .divImagenes{
+        display: inline-block;
+        position: relative;
+        height: 80%;
+        width: 90%;
+        margin: auto;
+        margin-right: 50px;
+    }
+    .Gardevoir, .Diantha{
+        position: absolute;
+        bottom: 20px;
+        height: 99%;
+    }
+    .Gardevoir{
+        right: 50px;
+        top: 20px;
+    }
+    
+    .Diantha{
+        right: 25px;
+    }
+    .svgPerfil{
+        position: absolute;
+        left: 80%;
+        top: 13px;
+        bottom: auto;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media(max-width:900px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        border-radius: 10px;
+        /* background: rgb(168,168,168);
+        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
+        /* background-image: url(../../public/imagenes/pokemon.jpeg);
+        background-size:auto; 
+        background-repeat: no-repeat;
+        background-attachment:scroll; */
+        background-color: rgba(255, 255, 255, 0.067);
+        margin: auto;
+        height: 80%;
+    }
+    .divFormulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 200px;
+        background: rgb(12,46,3);
+        background: linear-gradient(270deg, rgba(12,46,3,1) 0%, rgba(70,142,68,1) 50%, rgba(164,237,170,1) 100%);
+        width: 100%;
+        position: relative;
+        height: 500px;
+    }
+    .Label{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: 56px;
+    }
+    .mail, .comentarios, .Nombre{
+        background-color: #ffffff00;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 100px;
+        margin: auto;
+        border: 2px solid  rgba(20, 67, 9, 0.754);
+        mix-blend-mode:screen;
+        color: black;
+        resize: none;
+        padding-left: 10px;
+    }
+    .divImagenes{
+        display: inline-block;
+        position: relative;
+        height: 80%;
+        width: 90%;
+        margin: auto;
+        margin: auto;
+    }
+    .Gardevoir{
+        display: none;
+    }
+    .Diantha{
+        position: absolute;
+        height: 99%;
+        right: 25px;
+    }
+    .svgPerfil{
+        position: absolute;
+        left: 75%;
+        top: 13px;
+        bottom: auto;
+        height: 30px;
+        width: 30px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width:600px){
+    .divImagenes{
+        display: none;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        border-radius: 10px;
+        /* background: rgb(168,168,168);
+        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
+        /* background-image: url(../../public/imagenes/pokemon.jpeg);
+        background-size:auto; 
+        background-repeat: no-repeat;
+        background-attachment:scroll; */
+        background-color: rgba(255, 255, 255, 0.067);
+        margin: auto;
+        height: 80%;
+    }
+    .divFormulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 200px;
+        background: rgb(12,46,3);
+        background: linear-gradient(270deg, rgba(12,46,3,1) 0%, rgba(70,142,68,1) 50%, rgba(164,237,170,1) 100%);
+        width: 100%;
+        position: relative;
+        height: 500px;
+    }
+    .Label{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: 56px;
+    }
+    .mail, .comentarios, .Nombre{
+        background-color: #ffffff00;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 100px;
+        margin: auto;
+        border: 2px solid  rgba(20, 67, 9, 0.754);
+        mix-blend-mode:screen;
+        color: black;
+        resize: none;
+        padding-left: 10px;
+    }
+    .svgPerfil{
+        position: absolute;
+        left: 80%;
+        top: 13px;
+        bottom: auto;
+        height: 30px;
+        width: 30px;
+        padding-right: 10px;
+    }
+}
+
+.mail, .comentarios, .Nombre{
+    background-color: #ffffff00;
+    width: 77%;
+    height: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
+    align-items: flex-start;
+    border-radius: 100px;
+    margin: auto;
+    border: 2px solid  rgba(20, 67, 9, 0.754);
+    mix-blend-mode:screen;
+    color: black;
+    resize: none;
+    padding-left: 10px;
+}
+
+h2{
+    color: #000000;
+    margin: 20px auto;
 }
 
 .formulario{
-    background: rgb(12,46,3);
-    background: linear-gradient(270deg, rgba(12,46,3,1) 0%, rgba(70,142,68,1) 50%, rgba(164,237,170,1) 100%);    display: flex;
+    display: flex;
     flex-direction: column;
-    width: 900px;
-    height: 500px;
-    border: solid 3px rgb(154, 217, 153);
+    border: solid 3px rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    /* background: rgb(168,168,168);
+    background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
+    /* background-image: url(../../public/imagenes/pokemon.jpeg);
+    background-size:auto; 
+    background-repeat: no-repeat;
+    background-attachment:scroll; */
+    backdrop-filter: blur(200px);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-bottom: 50px;
+}
+
+
+.comentarios, #divtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.Gardevoir, .Diantha{
+    position: absolute;
+}
+
+#divtitulo{
+    height: 60px;
+    padding-top: 20px;
+    color: var(--verdepokemon);
+}
+
+#titulo{
+    color: #257135;
+}
+.mail::placeholder, .Nombre::placeholder, .comentarios::placeholder{
+    color: #000000;
+    font-weight: 400;
+}
+
+.submit{
+    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
+    width: 80%;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.712);
+    border: 3px solid rgba(0, 0, 0, 0.277);
+    border-radius: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover{
+    animation: colorfondo 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorfondo{
+    100%{
+        background-color: #000000b3;
+        color: white;
+        box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.646);
+        .svgPerfil{
+            color: #ffffffb6;
+        }
+    }
+}
+
+
+
+.divImagenes{
+    padding-right: 20px;
 }

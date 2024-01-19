@@ -228,8 +228,8 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
                     } 
                     {(eleccionShiny1===1) &&
                     <>
-                    <h3>{poke.name} shiny</h3>        
-                    <div className='divSprite'>
+                    <h3>{poke.name} <span style={{color: "var(--amarillopokemon)"}}>shiny</span></h3>        
+                    <div className='divSpriteShiny'>
                     <img src={poke.sprites.front_shiny} alt={poke.name+"shiny"}/>
                     <img src={poke.sprites.back_shiny} alt={poke.name+"shiny"}/>
                     </div>
@@ -279,8 +279,8 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
                     } 
                     {(eleccionShiny2===1) &&
                     <>
-                    <h3>{poke2.name} shiny</h3>        
-                    <div className='divSprite'>
+                    <h3>{poke2.name} <span style={{color: "var(--amarillopokemon)"}}>shiny</span></h3>        
+                    <div className='divSpriteShiny'>
                     <img src={poke2.sprites.front_shiny} alt={poke2.name+"shiny"}/>
                     <img src={poke2.sprites.back_shiny} alt={poke2.name+"shiny"}/>
                     </div>
@@ -330,8 +330,8 @@ export default function Imagentipo ({titulo, imagen,idd,Poke2,Poke3}) {
                     } 
                     {(eleccionShiny3===1) &&
                     <>
-                    <h3>{poke3.name} shiny</h3>        
-                    <div className='divSprite'>
+                    <h3>{poke3.name} <span style={{color: "var(--amarillopokemon)"}}>shiny</span></h3>        
+                    <div className='divSpriteShiny'>
                     <img src={poke3.sprites.front_shiny} alt={poke3.name+"shiny"}/>
                     <img src={poke3.sprites.back_shiny} alt={poke3.name+"shiny"}/>
                     </div>

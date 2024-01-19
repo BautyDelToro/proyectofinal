@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 1200px;
+        height: 1000px;
         gap: 10px;
     }
     .divi1{
@@ -24,22 +24,25 @@
     }
 }
 
-.divgrandeizquierda{
+.divgrandeizquierda, .divizquierda{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
+    gap: 10px;
 }
-.divgrandemedio{
+.divgrandemedio .divmedio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
-.divgrandederecha{
+.divgrandederecha, .divderecha{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-right: 20px;
+    gap: 10px;
 }
 
 .TituloHabilidades{
@@ -125,7 +128,7 @@
     color: rgb(27 70 131);
     border: 2px solid #b02a20;
 }.divi2izquierda{
-    background-color: rgb(192, 201, 220);
+    background-color: rgb(181, 198, 236);
     border: 2px solid var(--azulpokemon);
     .texto2{
         color: var(--azulpokemon);
@@ -185,7 +188,7 @@
     border: none;
     transition: box-shadow 300ms;
     position: relative;
-    top: -20px;
+    top: -30px;
 }
 .boton:hover{
     background-color: var(--amarillopokemon);

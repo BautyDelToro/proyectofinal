@@ -1,8 +1,8 @@
 export default function Gracias(){
     return(
-        <>
-            <h1>Formulario enviado</h1>
-            <h3>¡Muchas gracias!</h3>
-        </>
+        <div>
+            <h1>Review sent</h1>
+            <h3>¡Thank you so much!</h3>
+        </div>
     )
 }
