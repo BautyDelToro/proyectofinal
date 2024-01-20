@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <div id='divtitulo'>
-        <h1>Pokemon types: damage relations</h1>
+        <h1>Pokemon damage relations</h1>
       </div>
       
     <div className='DivMayor'>
@@ -53,6 +53,7 @@ export default function Home() {
         centeredSlides={true}
         navigation={true}
         spaceBetween={5}
+        loop={true}
         slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 0,
@@ -107,13 +108,13 @@ export default function Home() {
         <img src="./pokeballs/Level_Ball.png" className='imagenpokebola' alt='Level Ball'/>
         <h4>Capture ratio:</h4>
         <p>
-          - x1 when the level of the trainer`s Pokémon is equal to or lower than the level of the target`s pokemon level.
+          - x1 when the level of the Pokémon is equal or lower than the level of the target`s.
           <br />
-          - x2 when the level of the trainer`s Pokémon is higher than the target`s pokemon level.
+          - x2 when it`s higher than the target`s level.
           <br />
-          - x4 when the level of the trainer`s Pokémon is twice or more than the target`s pokemon level.
+          - x4 when i`s twice or more than the target`s level.
           <br />
-          - x8 when the level of the trainer`s Pokémon is four times or more than the target`s pokemon level.
+          - x8 when it`s four times or more than the target`s level.
         </p>
         </div>
         </SwiperSlide>

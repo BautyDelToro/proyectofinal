@@ -39,6 +39,7 @@
 }
 
 .botonRelaciones{
+    transition: background-color 500ms;
     background-color: white;
     border: none;
     border-radius: 3px;
@@ -107,8 +108,6 @@
         width: auto;
     }
 }
-
-
 
 .botonCerrar:hover{
     animation: colorfondo2 500ms;

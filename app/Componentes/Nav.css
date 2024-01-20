@@ -1,3 +1,9 @@
+@media(max-width:550px){
+    .imagenpokemon{
+        display: none;
+    }
+}
+
 .imagenlogo{
     max-width: 60px;
     padding-left: 10px;
@@ -27,16 +33,31 @@
     align-items: center;
     flex-grow: 1;
     list-style-type: none;
+    margin-right: 20px;
 }
 
 .lista li{
-    padding-left: 10px;
-    margin-right: 10px;
-    font-size: 15px;
-    color: aliceblue ;
+    margin: auto 10px;
+    text-align: center;
 }
 
-.lista li:hover{
+.Link{
+    font-size: 15px;
+    color: aliceblue ;
+    margin: auto;
+    transition: box-sadow 300ms;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 17px;
+    transition: color 500ms;
+    text-align: center;
+}
+
+.Link:hover{
     color: var(--amarillopokemon);
 }
 
+.imagenpokemon{
+    max-width: 200px;
+    margin: auto auto auto 15px;
+}

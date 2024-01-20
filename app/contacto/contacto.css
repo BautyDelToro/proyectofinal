@@ -9,12 +9,6 @@
         border: solid 3px rgba(255, 255, 255, 0.15);
         gap: 30px;
         border-radius: 10px;
-        /* background: rgb(168,168,168);
-        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
-        /* background-image: url(../../public/imagenes/pokemon.jpeg);
-        background-size:auto; 
-        background-repeat: no-repeat;
-        background-attachment:scroll; */
         backdrop-filter: blur(200px);
         background-color: rgba(255, 255, 255, 0.15);
         padding-bottom: 50px;
@@ -59,7 +53,7 @@
     
     .Diantha{
         right: 25px;
-        bottom: 50px;
+        bottom: 100px;
     }
     .svgPerfil{
         position: absolute;
@@ -79,12 +73,6 @@
         gap: 30px;
         width: 90%;
         border-radius: 10px;
-        /* background: rgb(168,168,168);
-        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
-        /* background-image: url(../../public/imagenes/pokemon.jpeg);
-        background-size:auto; 
-        background-repeat: no-repeat;
-        background-attachment:scroll; */
         background-color: rgba(255, 255, 255, 0.067);
         margin: auto;
         height: 80%;
@@ -160,12 +148,6 @@
         gap: 30px;
         width: 90%;
         border-radius: 10px;
-        /* background: rgb(168,168,168);
-        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
-        /* background-image: url(../../public/imagenes/pokemon.jpeg);
-        background-size:auto; 
-        background-repeat: no-repeat;
-        background-attachment:scroll; */
         background-color: rgba(255, 255, 255, 0.067);
         margin: auto;
         height: 80%;
@@ -240,12 +222,6 @@
         gap: 30px;
         width: 90%;
         border-radius: 10px;
-        /* background: rgb(168,168,168);
-        background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
-        /* background-image: url(../../public/imagenes/pokemon.jpeg);
-        background-size:auto; 
-        background-repeat: no-repeat;
-        background-attachment:scroll; */
         background-color: rgba(255, 255, 255, 0.067);
         margin: auto;
         height: 80%;
@@ -320,12 +296,6 @@ h2{
     flex-direction: column;
     border: solid 3px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
-    /* background: rgb(168,168,168);
-    background: radial-gradient(circle, rgba(168,168,168,0.39539565826330536) 0%, rgba(126,164,128,1) 100%);    border-radius: 10px;
-    /* background-image: url(../../public/imagenes/pokemon.jpeg);
-    background-size:auto; 
-    background-repeat: no-repeat;
-    background-attachment:scroll; */
     backdrop-filter: blur(200px);
     background-color: rgba(255, 255, 255, 0.15);
     padding-bottom: 50px;
@@ -386,9 +356,36 @@ h2{
         }
     }
 }
-
-
+@media (max-width:700px){
+    .imagenpoke{
+        display: none;
+    }
+    .imagenash{
+        display: inline-block;
+    }
+}
+@media (min-width:700px){
+    .imagenpoke{
+        width: 50%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .imagenash{
+        display: none;
+    }
+}
 
 .divImagenes{
     padding-right: 20px;
 }
+
+.divGracias{
+    height: 1000px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+

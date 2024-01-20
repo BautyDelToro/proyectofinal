@@ -2,30 +2,11 @@
     max-width: 150px;
     border-radius: 50%;
 }
-#botonAbrirtodo{
-    width: 120px;
-    height: 60px;
-    background-color: white;
-    color: var(--azulpokemon);
-    border-radius: 3px;
-    font-size: 20px;
-    border: solid var(--azulpokemon) 2px;
-}
-#botonAbrirtodo:hover{
-    animation: hoverboton 500ms;
-    animation-fill-mode: forwards;
-}
-@keyframes hoverboton{
-    100%{
-        background-color: var(--azulpokemon);
-        color: white;
-        box-shadow: 0px 0px 0px 2px white;  
-    }
-}
+
 .titulopoke{
     padding-left: 5px;
     font-size: 20px;
-    color: var(--azulpokemon);
+    color: white;
     display: block;
 }
 h3{
@@ -43,8 +24,8 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgb(90,111,159);
-    background: linear-gradient(270deg, rgba(68, 114, 220, 0.556) 0%, rgba(40, 130, 215, 0.27) 100%);
+    background: rgb(27,70,131);
+    background: radial-gradient(circle, rgba(27,70,131,0.5) 0%, rgba(27,70,131,0.6) 50%, rgba(27, 70, 131, 0.744) 100%);
     margin: 10px auto;
     padding-left: 10px;
     padding-right: 50px;
@@ -323,6 +304,8 @@ h3{
     .tarjeta60{display: none;}
 
     .botonShiny{
+        transition: color 500ms;
+        animation-fill-mode: forwards;
         color: rgb(0, 0, 0);
         background-color: rgba(255, 0, 0, 0);
         border: none;
@@ -338,9 +321,8 @@ h3{
         color: rgb(0, 0, 0);        
     }
     .botonShiny1{
-        color: rgb(250, 185, 0);
         animation: brillito 500ms;
-        animation-timing-function: cubic-bezier(.19,.7,.4,.8);
+        animation-fill-mode: forwards;
     }
     .divBotonshiny{
         display: flex;
@@ -379,6 +361,7 @@ h3{
                         0px 0px 0px 7px rgb(250, 185, 0);
         }
         100%{
+            color: rgb(250, 185, 0);
             box-shadow: 0px 0px 0px 7px rgba(155, 25, 25, 0),
                         0px 0px 0px 9px rgb(250, 185, 0),
         }
@@ -394,20 +377,20 @@ h3{
 .divimagen{display: flex;flex-direction: column;}
 .botonDespliegue{
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: white;
-    color: var(--amarillooscuro);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
     padding-top: 30px;
     padding-bottom: 30px;
-    border: solid rgb(155 190 239) 2px;
+    border: solid rgba(255, 255, 255, 0.201) 2px;
     border-radius: 5px;
+    backdrop-filter:blur(10px);
 }
-.botonDespliegue:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
-.botonEncendido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}  
-.botonMovido:hover{background-color: rgb(226, 226, 226);color: var(--azulpokemon); border: solid var(--azulpokemon) 2px;}
-
+.botonDespliegue:hover{background-color: rgba(226, 226, 226, 0);color: white; border: solid white 2px;}
+.botonEncendido:hover{background-color: rgba(226, 226, 226, 0);color: white; border: solid white 2px;}  
+.botonMovido:hover{background-color: rgba(226, 226, 226, 0);color: white; border: solid white 2px;}
 
 @keyframes flechaDerecha{
     90%{
