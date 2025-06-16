@@ -23,7 +23,7 @@ export default function Pokemones (){
                 <Imagentipo titulo="flying" imagen="/imagenes/Vuelo.png" idd="flying" Poke2="golbat" Poke3="staraptor" />
                 <Imagentipo titulo="dragon" imagen="/imagenes/Dragon.png" idd="dragon" Poke2="drakloak" Poke3="salamence-mega" />
                 <Imagentipo titulo="poison" imagen="/imagenes/Veneno.png" idd="poison" Poke2="haunter" Poke3="arbok" />
-                <Imagentipo titulo="fairy" imagen="/imagenes/Hada.png" idd="fairy" Poke2="magearna" Poke3="rapidash-galar" />
+                <Imagentipo titulo="fairy" imagen="/imagenes/Hada.png" idd="fairy" Poke2="tinkaton" Poke3="rapidash-galar" />
                 <Imagentipo titulo="psychic" imagen="/imagenes/Psiquico.png" idd="psychic" Poke2="mewtwo" Poke3="tapu-lele" />
                 <Imagentipo titulo="ghost" imagen="/imagenes/Fantasma.png" idd="ghost" Poke2="cursola" Poke3="banette-mega" />
                 <Imagentipo titulo="dark" imagen="/imagenes/Siniestro.png" idd="dark" Poke2="mightyena" Poke3="zorua" />
